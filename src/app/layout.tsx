@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { avenir, kotoriRose } from "@/fonts";
 
 export const metadata: Metadata = {
-  title: "Fitted.fashion",
+  title: "Fitted Fashion",
   description: "Get excellent aso ebi for any event or group",
 };
 
