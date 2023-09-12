@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import Measurement1 from "/public/measurement-1.png";
+
 export default function SendMeasurements() {
   return (
     <section>
@@ -48,7 +49,16 @@ export default function SendMeasurements() {
         </div>
       </div>
 
-      <div className="bg-main-purple lg:mt-20 lg:max-w-[1238px] mx-auto py-12 lg:py-14">
+      <div className="bg-main-purple relative lg:mt-20 lg:max-w-[1238px] mx-auto py-12 lg:py-14 overflow-hidden">
+        <div className="absolute w-[300px] h-[250px] -bottom-10 left-[calc(50%-250px)] lg:left-[135px] overflow-hidden">
+          <Image
+            src="/spiral-1.png"
+            alt="spiral background image"
+            loading="lazy"
+            fill={true}
+            className="object-contain object-center"
+          />
+        </div>
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-[275px] md:max-w-[728px] mx-auto mb-6">
             <h2 className="text-white text-2xl lg:text-[32px] text-center">
@@ -60,6 +70,15 @@ export default function SendMeasurements() {
           <div className="text-center w-3/4 md:w-2/3 lg:w-full mx-auto">
             <Button type="white">Get started</Button>
           </div>
+        </div>
+        <div className="absolute w-[300px] h-[250px] -top-10 right-[calc(50%-250px)] lg:right-[135px] overflow-hidden">
+          <Image
+            src="/spiral-2.png"
+            alt="spiral background image"
+            loading="lazy"
+            fill={true}
+            className="object-contain object-center"
+          />
         </div>
       </div>
     </section>

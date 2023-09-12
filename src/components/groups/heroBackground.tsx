@@ -28,7 +28,7 @@ export default function HeroBackground() {
       {bgImageIndex === 0 && (
         <Image
           src={bgImagePaths[0]}
-          alt={"women celebrating fashion"}
+          alt={"Women celebrating fashion"}
           fill={true}
           loading="lazy"
           className="object-cover object-center animate-fade-in"
@@ -37,7 +37,7 @@ export default function HeroBackground() {
       {bgImageIndex === 1 && (
         <Image
           src={bgImagePaths[1]}
-          alt={"women celebrating fashion"}
+          alt={"Men celebrating fashion"}
           fill={true}
           loading="lazy"
           className="object-cover object-center animate-fade-in"
