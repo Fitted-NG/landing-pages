@@ -10,7 +10,7 @@ export default function BrandLogo({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-w-[300px] h-[230px] px-5 py-8 rounded-lg bg-white border border-[#dadada] flex flex-col justify-between gap-6">
+    <div className="min-w-[280px] h-[230px] px-4 lg:px-5 py-6 lg:py-8 rounded-lg bg-white border border-[#dadada] flex flex-col justify-between gap-6">
       <div className="w-[80px] relative shrink-0 h-1/3">
         <Image
           src={img}
