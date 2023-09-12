@@ -16,7 +16,7 @@ export default function Brands() {
             <div className="flex gap-8">
               {brands.map((brand) => (
                 <BrandLogo key={brand.id} img={brand.img} alt={brand.name}>
-                  {brand.text}
+                  <li>{brand.text}</li>
                 </BrandLogo>
               ))}
             </div>
@@ -24,7 +24,7 @@ export default function Brands() {
             <div className="flex gap-8">
               {brands.map((brand) => (
                 <BrandLogo key={brand.id} img={brand.img} alt={brand.name}>
-                  {brand.text}
+                  <li>{brand.text}</li>
                 </BrandLogo>
               ))}
             </div>

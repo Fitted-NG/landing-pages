@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 
 export default function BrandLogo({
   img,
@@ -11,8 +10,8 @@ export default function BrandLogo({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-w-[280px] h-[230px] px-5 py-8 rounded-lg bg-white border border-[#dadada] flex flex-col justify-center">
-      <div className="w-[80px] h-[60px] mb-8 relative shrink-0">
+    <div className="min-w-[300px] h-[230px] px-5 py-8 rounded-lg bg-white border border-[#dadada] flex flex-col justify-between gap-6">
+      <div className="w-[80px] relative shrink-0 h-1/3">
         <Image
           src={img}
           fill={true}
@@ -22,7 +21,9 @@ export default function BrandLogo({
         />
       </div>
 
-      <ul className="text-dark-text text-sm list-disc">{children}</ul>
+      <ul className="text-dark-text text-sm list-disc pl-2 h-full">
+        {children}
+      </ul>
     </div>
   );
 }

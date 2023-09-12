@@ -14,7 +14,7 @@ export default function HeroBackground() {
   useEffect(() => {
     const interval = setInterval(() => {
       setBgImageIndex((prev) => prev + 1);
-    }, 4500);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
