@@ -7,7 +7,7 @@ import CallIcon from "/public/icons/footer-call.svg";
 
 export default function FooterLinks() {
   return (
-    <>
+    <div>
       <div className="flex flex-wrap gap-2 lg:gap-14 justify-between lg:justify-center mb-6 lg:mb-7">
         <a href="#">Home</a>
         <a href="#">Support</a>
@@ -30,6 +30,6 @@ export default function FooterLinks() {
           <p>+234 908 368 0999</p>
         </a>
       </div>
-    </>
+    </div>
   );
 }

@@ -34,7 +34,7 @@ const config: Config = {
         },
         "brands-carousel": {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-1248px)" },
+          "100%": { transform: "translateX(-2496px)" },
         },
         "fade-in": {
           "0%": { opacity: "0.5", scale: "1.05" },

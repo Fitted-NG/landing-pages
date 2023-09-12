@@ -12,13 +12,11 @@ const images = [FirstImage, SecondImage, ThirdImage, FourthImage];
 
 export default function GroupFashion() {
   const [currentTab, setCurrentTab] = useState(0);
-  const [imageIndex, setImageIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setCurrentTab((prev) => prev + 1);
-      setImageIndex((prev) => prev + 1);
     }, 3500);
 
     return () => {
@@ -26,11 +24,10 @@ export default function GroupFashion() {
         clearInterval(intervalRef.current);
       }
     };
-  }, [intervalRef.current]);
+  }, [currentTab]);
 
   if (currentTab >= images.length) {
     setCurrentTab(0);
-    setImageIndex(0);
   }
 
   const changeTab = (index: number) => {
@@ -38,7 +35,6 @@ export default function GroupFashion() {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    setImageIndex(index);
   };
 
   return (
@@ -63,7 +59,7 @@ export default function GroupFashion() {
           <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between gap-16 lg:gap-20 mb-14">
             <div className="flex justify-center items-center lg:items-start w-full lg:w-1/2 lg:h-[504px]">
               <Image
-                src={images[imageIndex]}
+                src={images[currentTab]}
                 alt="group fashion"
                 priority
                 className="w-full"

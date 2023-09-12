@@ -12,9 +12,7 @@ export default function Footer() {
             <Image src={FooterLogo} alt="logo" />
           </div>
 
-          <div>
-            <FooterLinks />
-          </div>
+          <FooterLinks />
         </div>
 
         <div className="h-[1px] bg-[#d9d9d9] mb-4 lg:mb-7"></div>

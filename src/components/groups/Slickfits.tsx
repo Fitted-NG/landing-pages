@@ -9,7 +9,7 @@ export default function SlickFits() {
           Slick fits for the whole crew
         </h1>
 
-        <div className="h-[480px] overflow-x-scroll no-scrollbar mb-6">
+        <div className="h-[480px] overflow-x-scroll no-scrollbar mb-8">
           <div className="h-full flex gap-4 animate-carousel1">
             <div className="flex gap-4">
               <div className="min-w-fit flex gap-4">
@@ -325,7 +325,7 @@ export default function SlickFits() {
                     loading="lazy"
                     className="object-cover object-center"
                   />
-                  <ImageTag text="Gada Agbada" />
+                  <ImageTag text="Luxury 3 piece agbada" />
                 </div>
 
                 <div className="h-full flex flex-col justify-between">
