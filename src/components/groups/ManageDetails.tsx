@@ -7,8 +7,8 @@ import Image4 from "/public/manage-details-4.png";
 
 export default function ManageDetails() {
   return (
-    <section className="mt-16 md:mt-20">
-      <div className="container mx-auto px-6 md:px-12 md:pt-16">
+    <section className="bg-light-cream mt-16 md:mt-20">
+      <div className="container mx-auto px-6 pb-16 md:px-12 md:pt-16">
         <div className="sm:max-w-[345px] md:max-w-none mx-auto mb-5 md:mb-14">
           <h1 className="text-2xl md:text-5xl text-center font-bold mb-8">
             Eliminate the Stress of Managing the Details
@@ -27,11 +27,11 @@ export default function ManageDetails() {
                 src={Image1}
                 alt="men measuring a cloth"
                 loading="lazy"
-                className="rounded-lg"
+                className="rounded-lg "
               />
             </div>
 
-            <p className="text-2xl font-medium">Measurements</p>
+            <p className="text-2xl font-medium text-dark-text">Measurements</p>
 
             <ul className="pl-4 list-disc text-dark-text">
               <li>Store measurements</li>
@@ -51,7 +51,7 @@ export default function ManageDetails() {
               />
             </div>
 
-            <p className="text-2xl font-medium">Fabric</p>
+            <p className="text-2xl font-medium text-dark-text">Fabric</p>
 
             <ul className="pl-4 list-disc text-dark-text">
               <li>Source exceptional quality curated fabric</li>
@@ -89,7 +89,7 @@ export default function ManageDetails() {
               />
             </div>
 
-            <p className="text-2xl font-medium">Payments</p>
+            <p className="text-2xl font-medium text-dark-text">Payments</p>
 
             <ul className="pl-4 list-disc text-dark-text">
               <li>Pay easily</li>

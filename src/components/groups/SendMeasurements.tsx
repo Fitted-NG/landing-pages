@@ -56,13 +56,14 @@ export default function SendMeasurements() {
             alt="spiral background image"
             loading="lazy"
             fill={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain object-center"
           />
         </div>
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-[275px] md:max-w-[728px] mx-auto mb-6">
             <h2 className="text-white text-2xl lg:text-[32px] text-center">
-              Seamlessly organize your aso ebi or groups outfit for your
+              Seamlessly organize your Aso Ebi or groups outfit for your
               occasion
             </h2>
           </div>
@@ -77,6 +78,7 @@ export default function SendMeasurements() {
             alt="spiral background image"
             loading="lazy"
             fill={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain object-center"
           />
         </div>

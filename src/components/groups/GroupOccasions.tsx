@@ -1,7 +1,4 @@
-import Image from "next/image";
 import Button from "./Button";
-import OccasionImage from "/public/groups-occasions.png";
-import PlayIcon from "/public/icons/play-icon.svg";
 
 export default function GroupOccasions() {
   return (
@@ -18,24 +15,18 @@ export default function GroupOccasions() {
             <Button type="white">Explore aso-ebi options</Button>
           </div>
         </div>
+      </div>
 
-        <div>
-          <div className="w-full relative">
-            <Image
-              src={OccasionImage}
-              alt="Group occasions"
-              className="aspect-video mx-auto"
-              loading="lazy"
-            />
-            <div className="w-[50px] h-[50px] md:w-[100px] md:h-[100px] absolute top-[50%] left-[50%] object-cover object-center -translate-x-1/2 -translate-y-1/2">
-              <Image src={PlayIcon} alt="play icon" loading="lazy" />
-            </div>
-            <p className="text-white w-[184px] lg:w-[461px] text-[8px] lg:text-xl absolute bottom-2 right-2 md:bottom-5 md:right-5 lg:bottom-12 lg:right-12">
-              See how fitted styled and produced outfits for 60+ groomsmen in
-              under 2 weeks (Jan- 2023)
-            </p>
-          </div>
-        </div>
+      <div className="relative max-w-[1400px] aspect-video mx-auto cursor-pointer">
+        <iframe
+          src="/videos/group-occasions.mp4"
+          width="100%"
+          height="100%"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+          name="Fitted Group Occasions"
+        ></iframe>
       </div>
     </section>
   );
