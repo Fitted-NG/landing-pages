@@ -20,10 +20,9 @@ const config: Config = {
       },
       colors: {
         "pink-fitted": "#B7076B",
-        "main-purple": "#B7076B",
-        "dark-text": "#344054",
-        "light-cream": "#FAF9F9",
-        "main-blue": "#5773FF"
+        dark: "#344054",
+        "cream-fitted": "#FAF9F9",
+        "blue-fitted": "#5773FF",
       },
       keyframes: {
         carousel: {

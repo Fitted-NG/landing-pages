@@ -30,7 +30,7 @@ export default function GroupFashion() {
   };
 
   return (
-    <section className="mt-16 lg:mt-32 bg-light-cream w-full">
+    <section className="mt-16 lg:mt-32 bg-cream-fitted w-full">
       <div className="py-16 container mx-auto px-6 md:px-12">
         <div className="hidden lg:block mb-16">
           <h1 className="text-center text-5xl font-bold mb-[22px]">
@@ -61,7 +61,7 @@ export default function GroupFashion() {
             <div className="flex flex-col gap-5 lg:gap-8 w-full lg:w-[60%] border-l-2">
               <div
                 onClick={() => changeTab(0)}
-                className={`px-3 lg:px-8 cursor-pointer hover:opacity-100 relative before:bg-main-purple before:transition-all before:ease-in before:absolute before:w-1 before:h-full before:top-0 before:-left-[1px] ${
+                className={`px-3 lg:px-8 cursor-pointer hover:opacity-100 relative before:bg-pink-fitted before:transition-all before:ease-in before:absolute before:w-1 before:h-full before:top-0 before:-left-[1px] ${
                   currentTab === 0
                     ? "before:opacity-100 opacity-100"
                     : "before:opacity-0 opacity-75"
@@ -70,7 +70,7 @@ export default function GroupFashion() {
                 <h3 className="text-[#2A313D] text-sm md:text-xl lg:text-2xl font-bold mb-1">
                   Invite guests
                 </h3>
-                <p className="text-dark-text text-sm lg:text-base">
+                <p className="text-dark text-sm lg:text-base">
                   Invite all of your guests to the groups platform that way all
                   of your guests are in one place.
                 </p>
@@ -87,7 +87,7 @@ export default function GroupFashion() {
                 <h3 className="text-[#2A313D] text-sm md:text-xl lg:text-2xl font-bold mb-1">
                   Get measurement
                 </h3>
-                <p className="text-dark-text text-sm lg:text-base">
+                <p className="text-dark text-sm lg:text-base">
                   Receive notifications upon interested tailors and make a pick
                   based on your preference.
                 </p>
@@ -104,7 +104,7 @@ export default function GroupFashion() {
                 <h3 className="text-[#2A313D] text-sm md:text-xl lg:text-2xl font-bold mb-1">
                   Sort your fabric, get your style
                 </h3>
-                <p className="text-dark-text text-sm lg:text-base">
+                <p className="text-dark text-sm lg:text-base">
                   Engage in negotiations and finalize style details for the
                   group. Make payment only when you're satisfied with the
                   offered price. Our platform provides a seamless and convenient
@@ -114,7 +114,7 @@ export default function GroupFashion() {
 
               <div
                 onClick={() => changeTab(3)}
-                className={`px-3 lg:px-8 cursor-pointer hover:opacity-100 relative before:bg-dark-text before:transition-all before:ease-in before:absolute before:w-1 before:h-full before:top-0 before:-left-[1px] ${
+                className={`px-3 lg:px-8 cursor-pointer hover:opacity-100 relative before:bg-dark before:transition-all before:ease-in before:absolute before:w-1 before:h-full before:top-0 before:-left-[1px] ${
                   currentTab === 3
                     ? "before:opacity-100 opacity-100"
                     : "before:opacity-0 opacity-75"
@@ -123,7 +123,7 @@ export default function GroupFashion() {
                 <h3 className="text-[#2A313D] text-sm md:text-xl lg:text-2xl font-bold mb-1">
                   Speedy delivery
                 </h3>
-                <p className="text-dark-text text-sm lg:text-base">
+                <p className="text-dark text-sm lg:text-base">
                   Rate your experience and help others find awesome tailors
                 </p>
               </div>

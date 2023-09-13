@@ -49,7 +49,7 @@ export default function SendMeasurements() {
         </div>
       </div>
 
-      <div className="bg-main-purple relative lg:mt-20 lg:max-w-[1238px] mx-auto py-12 lg:py-14 overflow-hidden">
+      <div className="bg-pink-fitted relative lg:mt-20 lg:max-w-[1238px] mx-auto py-12 lg:py-14 overflow-hidden">
         <div className="absolute w-[300px] h-[250px] -bottom-10 left-[calc(50%-250px)] lg:left-[135px] overflow-hidden">
           <Image
             src="/spiral-1.png"

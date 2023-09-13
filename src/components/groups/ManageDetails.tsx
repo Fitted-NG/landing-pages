@@ -7,14 +7,14 @@ import Image4 from "/public/manage-details-4.png";
 
 export default function ManageDetails() {
   return (
-    <section className="bg-light-cream mt-16 md:mt-20">
+    <section className="bg-cream-fitted mt-16 md:mt-20">
       <div className="container mx-auto px-6 pb-16 md:px-12 md:pt-16">
         <div className="sm:max-w-[345px] md:max-w-none mx-auto mb-5 md:mb-14">
           <h1 className="text-2xl md:text-5xl text-center font-bold mb-8">
             Eliminate the Stress of Managing the Details
           </h1>
 
-          <h3 className="text-center text-sm md:text-base font-normal text-dark-text font-avenir">
+          <h3 className="text-center text-sm md:text-base font-normal text-dark font-avenir">
             With the fitted platform, we seamlessly organize every aspect of
             your order
           </h3>
@@ -31,9 +31,9 @@ export default function ManageDetails() {
               />
             </div>
 
-            <p className="text-2xl font-medium text-dark-text">Measurements</p>
+            <p className="text-2xl font-medium text-dark">Measurements</p>
 
-            <ul className="pl-4 list-disc text-dark-text">
+            <ul className="pl-4 list-disc text-dark">
               <li>Store measurements</li>
               <li>Works for individuals and groups</li>
               <li>Male and female measurements covered</li>
@@ -51,9 +51,9 @@ export default function ManageDetails() {
               />
             </div>
 
-            <p className="text-2xl font-medium text-dark-text">Fabric</p>
+            <p className="text-2xl font-medium text-dark">Fabric</p>
 
-            <ul className="pl-4 list-disc text-dark-text">
+            <ul className="pl-4 list-disc text-dark">
               <li>Source exceptional quality curated fabric</li>
               <li>Make the perfect style with it</li>
               <li>Secure</li>
@@ -70,7 +70,7 @@ export default function ManageDetails() {
               />
             </div>
 
-            <p className="text-2xl font-medium text-dark-text">Styling</p>
+            <p className="text-2xl font-medium text-dark">Styling</p>
 
             <ul className="pl-4 list-disc">
               <li>Choose the exact outfit and look you like</li>
@@ -89,9 +89,9 @@ export default function ManageDetails() {
               />
             </div>
 
-            <p className="text-2xl font-medium text-dark-text">Payments</p>
+            <p className="text-2xl font-medium text-dark">Payments</p>
 
-            <ul className="pl-4 list-disc text-dark-text">
+            <ul className="pl-4 list-disc text-dark">
               <li>Pay easily</li>
               <li>Use card or transfer</li>
               <li>Organize and track payments for the whole group</li>
