@@ -1,0 +1,49 @@
+name: Build Dev Environment
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Log in to Docker Registry
+        env: 
+          REGISTRY: registry.digitalocean.com
+          REGISTRY_TOKEN: ${{ secrets.DO_DOCKER_REGISTRY_TOKEN }}
+        run: |
+          echo $REGISTRY_TOKEN | docker login -u $REGISTRY_TOKEN --password-stdin $REGISTRY
+
+      - name: Build and Push Docker Image
+        env: 
+          REGISTRY: registry.digitalocean.com
+          REPOSITORY: fitted
+          IMAGE_NAME: landing-page
+          ENV: dev
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY/$IMAGE_NAME/$ENV:latest .
+          docker push $REGISTRY/$REPOSITORY/$IMAGE_NAME/$ENV:latest
+
+  deploy_on_dev:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Set up SSH key with passphrase
+        env:
+          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t ed25519 138.197.179.82 >> ~/.ssh/known_hosts
+          eval "$(ssh-agent -s)"
+
+      - name: SSH into remote server and deploy
+        run: |
+          ssh root@138.197.179.82 "cd /root/docker/dev && chmod +x deploy-dev-landing.sh && ./deploy-dev-landing.sh"
