@@ -25,13 +25,9 @@ const config: Config = {
         "light-cream": "#FAF9F9",
       },
       keyframes: {
-        carousel1: {
+        carousel: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-2362px)" },
-        },
-        carousel2: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-2412px)" },
+          "100%": { transform: "translateX(-4774px)" },
         },
         "brands-carousel": {
           "0%": { transform: "translateX(0)" },
@@ -43,8 +39,7 @@ const config: Config = {
         },
       },
       animation: {
-        carousel1: "carousel1 28s infinite linear",
-        carousel2: "carousel2 28s infinite linear reverse",
+        carousel: "carousel 30s infinite linear",
         "brands-carousel": "brands-carousel 20s infinite linear",
         "fade-in": "fade-in 2s 1 ease-in",
       },
