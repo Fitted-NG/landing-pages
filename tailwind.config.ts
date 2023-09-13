@@ -23,6 +23,7 @@ const config: Config = {
         "main-purple": "#B7076B",
         "dark-text": "#344054",
         "light-cream": "#FAF9F9",
+        "main-blue": "#5773FF"
       },
       keyframes: {
         carousel: {
