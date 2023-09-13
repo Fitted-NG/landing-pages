@@ -19,6 +19,7 @@ const config: Config = {
         "kotori-rose": ["var(--font-kotori-rose)"],
       },
       colors: {
+        "pink-fitted": "#B7076B",
         "main-purple": "#B7076B",
         "dark-text": "#344054",
         "light-cream": "#FAF9F9",
