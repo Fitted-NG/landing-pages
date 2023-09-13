@@ -12,7 +12,7 @@ export default function CarouselImage({
       <div className="w-[350px] h-full relative overflow-hidden rounded-lg">
         <Image
           src={imgData.data.col1.img}
-          alt="African woman in gold and white dress"
+          alt={imgData.data.col1.imgTag}
           fill={true}
           loading="lazy"
           className="object-cover object-center"
@@ -30,7 +30,7 @@ export default function CarouselImage({
           >
             <Image
               src={imgDatum.img}
-              alt="Man with his hands in his pocket"
+              alt={imgDatum.imgTag}
               fill={true}
               loading="lazy"
               className="object-cover object-center"
