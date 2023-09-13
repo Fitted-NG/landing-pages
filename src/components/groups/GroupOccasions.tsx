@@ -18,15 +18,10 @@ export default function GroupOccasions() {
       </div>
 
       <div className="relative max-w-[1400px] aspect-video mx-auto cursor-pointer">
-        <iframe
-          src="/videos/group-occasions.mp4"
-          width="100%"
-          height="100%"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          loading="lazy"
-          name="Fitted Group Occasions"
-        ></iframe>
+        <video controls loop className="w-full h-full">
+          <source src="/videos/group-occasions.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   );
