@@ -34,7 +34,7 @@ const config: Config = {
         },
         "brands-carousel": {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-2496px)" },
+          "100%": { transform: "translateX(-1808px)" },
         },
         "fade-in": {
           "0%": { opacity: "0.5", scale: "1.05" },
@@ -42,9 +42,9 @@ const config: Config = {
         },
       },
       animation: {
-        carousel1: "carousel1 20s infinite linear",
-        carousel2: "carousel2 20s infinite linear reverse",
-        "brands-carousel": "brands-carousel 15s infinite linear",
+        carousel1: "carousel1 28s infinite linear",
+        carousel2: "carousel2 28s infinite linear reverse",
+        "brands-carousel": "brands-carousel 20s infinite linear",
         "fade-in": "fade-in 2s 1 ease-in",
       },
     },

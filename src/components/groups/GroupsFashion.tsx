@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "./Button";
 import FirstImage from "/public/group-fashion-1.png";
@@ -12,18 +12,13 @@ const images = [FirstImage, SecondImage, ThirdImage, FourthImage];
 
 export default function GroupFashion() {
   const [currentTab, setCurrentTab] = useState(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    intervalRef.current = setInterval(() => {
+    const intervalId = setInterval(() => {
       setCurrentTab((prev) => prev + 1);
     }, 3500);
 
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
+    return () => clearInterval(intervalId);
   }, [currentTab]);
 
   if (currentTab >= images.length) {
@@ -32,9 +27,6 @@ export default function GroupFashion() {
 
   const changeTab = (index: number) => {
     setCurrentTab(index);
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-    }
   };
 
   return (

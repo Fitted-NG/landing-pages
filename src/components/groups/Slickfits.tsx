@@ -3,7 +3,7 @@ import ImageTag from "./ImageTag";
 
 export default function SlickFits() {
   return (
-    <section className="mt-24 mb-[50px]">
+    <section className="mt-24 mb-36">
       <div className="container mx-auto px-6 md:px-12">
         <h1 className="hidden lg:block text-dark-text text-center text-5xl font-bold mb-[70px]">
           Slick fits for the whole crew

@@ -4,14 +4,13 @@ import Image from "next/image";
 import Button from "./Button";
 import { useSidebar } from "@/contexts/SidebarContext";
 import Logo from "/public/header-logo2.svg";
-import Close from "/public/x-close.png";
 
 export default function Sidebar() {
   const { isOpen, toggleSidebar } = useSidebar();
 
   return (
     <nav
-      className={`bg-white w-full h-[610px] px-6 pt-[18px] transition-all duration-300 absolute top-0 z-10 md:hidden ${
+      className={`bg-white w-full h-[610px] px-6 pt-[18px] shadow-md transition-all duration-300 fixed top-0 z-10 md:hidden ${
         isOpen ? "left-0" : "-left-full"
       }`}
     >
@@ -21,7 +20,7 @@ export default function Sidebar() {
         </div>
 
         <div onClick={toggleSidebar} className="cursor-pointer">
-          <Image src={Close} alt="close icon" loading="lazy" />
+          <div className="w-5 h-[3px] bg-black relative bg-transparent before:absolute before:bg-black before:w-5 before:h-[3px] before:left-0 before:-rotate-45 after:absolute after:bg-black after:w-5 after:h-[3px] after:left-0 after:rotate-45"></div>
         </div>
       </div>
 
