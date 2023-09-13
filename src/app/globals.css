@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-kotori-rose text-dark;
+  @apply font-kotori-rose;
 }
 
 @layer utilities {
@@ -27,7 +27,8 @@ h6 {
     scrollbar-width: none; /* Firefox */
   }
 
-  .brand:hover {
+  .brand:hover,
+  .image-carousel:hover {
     animation-play-state: paused;
   }
 

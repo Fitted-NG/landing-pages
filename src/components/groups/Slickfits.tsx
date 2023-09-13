@@ -10,7 +10,7 @@ export default function SlickFits() {
         </h1>
 
         <div className="h-[480px] overflow-x-scroll no-scrollbar mb-8">
-          <div className="h-full flex gap-4 animate-carousel">
+          <div className="h-full flex gap-4 animate-carousel image-carousel cursor-pointer">
             <div className="flex gap-4">
               {carouselImages.map((carouselImage) => (
                 <CarouselImage key={carouselImage.id} imgData={carouselImage} />
