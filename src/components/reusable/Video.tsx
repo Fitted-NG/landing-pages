@@ -51,7 +51,7 @@ export default function Video() {
       {showPlayBtn && (
         <button
           onClick={playVideo}
-          className=" w-11 h-11 md:w-20 md:h-20 lg:w-32 lg:h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="hidden lg:block w-11 h-11 md:w-20 md:h-20 lg:w-32 lg:h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <Image src={PlayIcon} alt="play icon" className="" />
         </button>
