@@ -39,7 +39,7 @@ const config: Config = {
         },
       },
       animation: {
-        carousel: "carousel 30s infinite linear",
+        carousel: "carousel 40s infinite linear",
         "brands-carousel": "brands-carousel 20s infinite linear",
         "fade-in": "fade-in 2s 1 ease-in",
       },
