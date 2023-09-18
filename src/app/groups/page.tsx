@@ -7,7 +7,7 @@ import GroupOccasions from "@/components/groups/GroupOccasions";
 import ManageDetails from "@/components/groups/ManageDetails";
 import Brands from "@/components/groups/Brands";
 import SendMeasurements from "@/components/groups/SendMeasurements";
-import Footer from "@/components/groups/Footer";
+import Footer from "@/components/reusable/Footer";
 import SidebarProvider from "@/contexts/SidebarContext";
 
 export default function Groups() {
