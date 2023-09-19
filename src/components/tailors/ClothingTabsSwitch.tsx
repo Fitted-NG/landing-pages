@@ -51,7 +51,7 @@ export default function ClothingTabsSwitch() {
               }}
             />
 
-            <div className="absolute w-[365px] top-40 right-5 text-white">
+            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
@@ -73,7 +73,7 @@ export default function ClothingTabsSwitch() {
                 height: "50vh",
               }}
             />
-            <div className="absolute w-[365px] top-40 right-5 text-white">
+            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
@@ -95,7 +95,7 @@ export default function ClothingTabsSwitch() {
                 height: "50vh",
               }}
             />
-            <div className="absolute w-[365px] top-40 right-14 text-white">
+            <div className="absolute lg:w-[365px] top-40 lg:right-14 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
