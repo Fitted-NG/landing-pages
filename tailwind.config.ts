@@ -24,6 +24,7 @@ const config: Config = {
         dark: "#344054",
         "cream-fitted": "#FAF9F9",
         "blue-fitted": "#5773FF",
+        "dark-tab": "#18181A",
       },
       keyframes: {
         carousel: {

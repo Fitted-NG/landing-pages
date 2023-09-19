@@ -18,12 +18,12 @@ export default function ClothingTabsSwitch() {
   };
 
   return (
-    <section className="bg-slate-100 sm:px-16 px-8 sm:py-24 py-12">
+    <section className="bg-white sm:px-16 sm:py-24 py-12">
       <div className="flex flex-col justify-center items-center">
-        <div className="bg-lime-500 p-1 px-3 rounded-full">
+        <div className="bg-[#F2F4F5] p-1 px-3 rounded-full">
           <button
             className={`rounded-full p-1 px-3 ${
-              currentTab === 1 ? "bg-blue-800 text-white" : "text-red-500"
+              currentTab === 1 ? "bg-blue-fitted text-white" : "text-dark-tab"
             }`}
             onClick={handleTabOne}
           >
@@ -31,7 +31,7 @@ export default function ClothingTabsSwitch() {
           </button>
           <button
             className={`rounded-full p-1 px-4 ${
-              currentTab === 2 ? "bg-blue-800 text-white" : "text-red-500"
+              currentTab === 2 ? "bg-blue-fitted text-white" : "text-dark-tab"
             }`}
             onClick={handleTabTwo}
           >
@@ -39,7 +39,7 @@ export default function ClothingTabsSwitch() {
           </button>
         </div>
 
-        <div className="flex flex-row items-center justify-center mt-5 gap-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center mt-5 gap-10">
           <div className={`${currentTab === 1 ? "flex" : "hidden"} relative`}>
             <Image
               src={ManualMeasurement}
@@ -51,7 +51,7 @@ export default function ClothingTabsSwitch() {
               }}
             />
 
-            <div className="absolute w-[412px] top-56 right-10 text-white">
+            <div className="absolute w-[365px] top-40 right-5 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
@@ -73,7 +73,7 @@ export default function ClothingTabsSwitch() {
                 height: "50vh",
               }}
             />
-            <div className="absolute w-[412px] top-56 right-10 text-white">
+            <div className="absolute w-[365px] top-40 right-5 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
@@ -95,7 +95,7 @@ export default function ClothingTabsSwitch() {
                 height: "50vh",
               }}
             />
-            <div className="absolute w-[412px] top-56 right-10 text-white">
+            <div className="absolute w-[365px] top-40 right-14 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
