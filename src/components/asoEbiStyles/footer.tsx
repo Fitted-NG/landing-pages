@@ -10,9 +10,12 @@ export function AsoEbiStylesFooter() {
             <h2 className="text-pink-fitted">Let Us Handle The Aso Ebi</h2>
           </div>
           <div className="flex justify-end">
-            <button className="bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px]">
+            <a
+              href="https://groups.fitted.ng/signup"
+              className="bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px]"
+            >
               Learn More
-            </button>
+            </a>
           </div>
         </div>
       </div>
