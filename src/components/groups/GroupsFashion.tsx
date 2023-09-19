@@ -30,7 +30,10 @@ export default function GroupFashion() {
   };
 
   return (
-    <section className="mt-16 lg:mt-32 bg-cream-fitted w-full">
+    <section
+      className="mt-16 lg:mt-32 bg-cream-fitted w-full"
+      id="group-fashion"
+    >
       <div className="py-16 container mx-auto px-6 md:px-12">
         <div className="hidden lg:block mb-16">
           <h1 className="text-center text-5xl font-bold mb-[22px]">
@@ -131,7 +134,9 @@ export default function GroupFashion() {
           </div>
 
           <div className="w-full md:w-2/3 lg:w-full mx-auto">
-            <Button type="purple">Get started</Button>
+            <a href="https://groups.fitted.ng/login">
+              <Button type="purple">Get started</Button>
+            </a>
           </div>
         </div>
       </div>
