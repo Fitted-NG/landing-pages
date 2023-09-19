@@ -5,7 +5,7 @@ import { AsoEbiStylesFooter } from "@/components/asoEbiStyles/footer";
 
 export default function Groups() {
   return (
-    <main>
+    <main className="text-lg">
       <AsoEbiStylesNavbar />
       <AsoEbiStylesHeroSection />
       <AsoEbiStylesTailoring />
