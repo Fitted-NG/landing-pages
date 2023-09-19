@@ -8,6 +8,7 @@ const bgImagePaths = [
   "/groups-hero-bg-image2.png",
 ];
 
+
 export default function HeroBackground() {
   const [bgImageIndex, setBgImageIndex] = useState(0);
 
