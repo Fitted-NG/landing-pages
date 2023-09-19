@@ -1,13 +1,18 @@
 import Image from "next/image";
 
-export default function BrandLogo({ img, alt }: { img: string; alt: string }) {
+interface IBrand {
+  src: string;
+  alt: string;
+}
+
+export default function BrandLogo({ src, alt }: IBrand) {
   return (
-    <div className="max-w-[1440px] px-4 lg:px-5 py-6 lg:py-8 flex justify-center items-center">
+    <div className="flex justify-center items-center px-4 lg:px-5 py-6 lg:py-8">
       <div className="w-[90px] h-[85px] relative shrink-0">
         <Image
-          src={img}
-          fill={true}
+          src={src}
           alt={alt}
+          fill={true}
           loading="lazy"
           className="object-contain object-center"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

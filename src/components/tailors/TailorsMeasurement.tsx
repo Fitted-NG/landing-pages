@@ -5,7 +5,7 @@ import CentralizeMeasurement from "/public/centralize-records.png";
 
 export default function TailorsMeasurement() {
   return (
-    <section className="bg-white sm:px-16 px-8 py-12">
+    <section className="bg-white sm:px-16 px-8 sm:py-24 py-12">
       <div className="container mx-auto flex flex-col items-center justify-center w-full gap-10">
         <div className="flex flex-col items-center">
           <h2 className="text-[#152C5B] font-kotori-rose font-bold text-center lg:max-w-[700px]  max-w-[345px] text-2xl lg:text-4xl">
