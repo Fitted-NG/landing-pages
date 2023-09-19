@@ -14,8 +14,12 @@ export default function GroupsHeroSection() {
         </div>
 
         <div className="flex flex-col w-3/4 md:w-2/4 lg:w-full mx-auto lg:flex-row justify-center items-center gap-2.5 lg:gap-6">
-          <Button type="purple">Get started</Button>
-          <Button type="white">See how it works</Button>
+          <a href="https://groups.fitted.ng/login">
+            <Button type="purple">Get started</Button>
+          </a>
+          <a href="#group-fashion">
+            <Button type="white">See how it works</Button>
+          </a>
         </div>
       </div>
     </section>

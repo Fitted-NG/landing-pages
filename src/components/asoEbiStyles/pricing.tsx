@@ -26,9 +26,12 @@ export default function AsoEbiStylesPricing() {
                 </ul>
               </div>
 
-              <button className="w-full bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5">
+              <a
+                href="https://groups.fitted.ng/signup?group=aso-ebi&price=50000"
+                className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
+              >
                 Create Order
-              </button>
+              </a>
             </div>
           </div>
           <div className="">
@@ -51,9 +54,12 @@ export default function AsoEbiStylesPricing() {
                   <li>Upto 10 outfits</li>
                 </ul>
               </div>
-              <button className="w-full bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5">
+              <a
+                href="https://groups.fitted.ng/signup?group=brides-maids&price=40000"
+                className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
+              >
                 Create Order
-              </button>
+              </a>
             </div>
           </div>
           <div className="">
@@ -77,18 +83,21 @@ export default function AsoEbiStylesPricing() {
                   <li>Dedicated Support</li>
                 </ul>
               </div>
-              <button className="w-full bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5">
+              <a
+                href="https://groups.fitted.ng/signup?group=familys&price=60000"
+                className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
+              >
                 Create Order
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="py-26 my-32">
+      <div className="py-26 mt-36 mb-16">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="font-bold font-kotori-rose text-4xl mb-4">
-            Plus even more
+            Plus Even More
           </h1>
           <p className="">You can do more with groups you setup on FittedNG.</p>
         </div>
