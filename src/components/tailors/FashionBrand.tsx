@@ -4,7 +4,7 @@ import FashionBrandImage from "/public/fashion-brand-lady.png";
 
 export default function FashionBrand() {
   return (
-    <section className="bg-[#FBFBFF] sm:px-16 px-8 sm:py-24 py-12">
+    <section className="bg-[#FBFBFF] sm:px-16 px-8 pt-12">
       <div className="container mx-auto flex justify-between items-center max-lg:flex-col gap-10 w-full">
         <div className="flex flex-1 flex-col lg:items-start sm:items-center">
           <h2 className="font-kotori-rose font-bold lg:text-3xl text-xl lg:max-w-md">Are you a fashion brand getting your products out?</h2>
@@ -15,15 +15,16 @@ export default function FashionBrand() {
           <Button type="blue">Join as fashion brand</Button>
         </div>
 
-        <div className="flex flex-1 justify-center items-center">
+        <div className="flex flex-col">
           <Image
             src={FashionBrandImage}
             alt="fashion brand image"
-            width={0}
-            height={0}
             loading="lazy"
-            sizes="(min-width: 808px) 100vw, 100vw"
-            className="object-contain cursor-pointer w-[1000px] h-full"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
           />
         </div>
       </div>
