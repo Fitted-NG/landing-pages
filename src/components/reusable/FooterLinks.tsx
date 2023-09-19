@@ -9,18 +9,36 @@ export default function FooterLinks() {
   return (
     <div>
       <div className="flex flex-wrap gap-2 lg:gap-14 justify-between lg:justify-center mb-6 lg:mb-7">
-        <a href="#">Home</a>
-        <a href="#">Support</a>
-        <a href="#">Careers</a>
+        <a href="https://fitted.ng" target="_blank" rel="noreferrer">
+          Home
+        </a>
+        <a
+          href="https://indigo-tin-97a.notion.site/Fitted-Support-Center-191dcd17279041949527825deb2624e7"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Support
+        </a>
+        <a
+          href="https://store.fitted.ng/jobs/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Careers
+        </a>
       </div>
 
-      <div className="flex flex-col gap-3 lg:flex-row lg:justify-center lg:gap-20">
+      <div className="flex flex-col gap-3 lg:flex-row lg:justify-center lg:gap-x-10 lg:gap-y-4 lg:flex-wrap">
         <a
           href="https://goo.gl/maps/Lq9D4pmACKHXBnLb6"
+          target="_blank"
+          rel="noreferrer"
           className="flex items-center gap-3"
         >
           <Image src={LocationIcon} alt="location icon" loading="lazy" />
-          <p>8 Connal Road, Yaba, Lagos, Nigeria</p>
+          <p>
+            AT & D Court, General Ogomudia Street, Lekki Phase 1, Lagos, Nigeria
+          </p>
         </a>
 
         <a href="mailto:hello@fitted.ng" className="flex items-center gap-3">

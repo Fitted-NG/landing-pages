@@ -100,7 +100,9 @@ export default function ManageDetails() {
         </div>
 
         <div className="w-full md:w-2/3 lg:w-full mx-auto">
-          <Button type="purple">Create invite to group</Button>
+          <a href="https://groups.fitted.ng/login">
+            <Button type="purple">Create invite to group</Button>
+          </a>
         </div>
       </div>
     </section>
