@@ -30,7 +30,7 @@ export default function AsoEbiStylesStep() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-stretch gap-10">
           <div className="">
-            <div className="mb-6">
+            <div className="mb-10">
               <Accordion
                 defaultActive={true}
                 header={
@@ -61,7 +61,7 @@ export default function AsoEbiStylesStep() {
                 }
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-10">
               <Accordion
                 header={
                   <h2 className="font-semibold text-2xl">
@@ -92,7 +92,7 @@ export default function AsoEbiStylesStep() {
                 }
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-10">
               <Accordion
                 header={
                   <h2 className="font-semibold text-2xl">
@@ -123,7 +123,7 @@ export default function AsoEbiStylesStep() {
                 }
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-10">
               <Accordion
                 header={
                   <h2 className="font-semibold text-2xl">
@@ -156,7 +156,7 @@ export default function AsoEbiStylesStep() {
                 }
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-10">
               <Accordion
                 header={
                   <h2 className="font-semibold text-2xl">
