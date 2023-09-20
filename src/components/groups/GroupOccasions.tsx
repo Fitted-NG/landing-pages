@@ -12,10 +12,16 @@ export default function GroupOccasions() {
           </h1>
 
           <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-3 lg:gap-4 w-full md:w-2/3 lg:w-full mx-auto">
-            <a href="https://groups.fitted.ng/login">
+            <a
+              href="https://groups.fitted.ng/login"
+              className="w-full lg:w-[initial]"
+            >
               <Button type="purple">Create a group</Button>
             </a>
-            <a href="https://fitted.fashion/aso-ebi-styles">
+            <a
+              href="https://fitted.fashion/aso-ebi-styles"
+              className="w-full lg:w-[initial]"
+            >
               <Button type="white">Explore aso-ebi options</Button>
             </a>
           </div>
