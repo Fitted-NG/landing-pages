@@ -15,7 +15,9 @@ export default function GroupOccasions() {
             <a href="https://groups.fitted.ng/login">
               <Button type="purple">Create a group</Button>
             </a>
-            <Button type="white">Explore aso-ebi options</Button>
+            <a href="https://fitted.fashion/aso-ebi-styles">
+              <Button type="white">Explore aso-ebi options</Button>
+            </a>
           </div>
         </div>
       </div>
