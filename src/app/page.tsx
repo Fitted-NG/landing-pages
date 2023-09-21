@@ -349,7 +349,7 @@ const Home: FC = () => {
         <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full rounded-2xl">
           <div className="h-[550px] w-full rounded-lg relative overflow-hidden">
             <Image
-              src="/several_tailors.png"
+              src="/group_of_tailors.png"
               fill
               alt="several tailors"
               className="object-left-top lg:object-top object-cover"
@@ -414,7 +414,7 @@ const Home: FC = () => {
 
       <section className="bg-white relative h-[750px]">
         <Image
-          src={"/custom_or_ready_to_wear.png"}
+          src={"/ready_to_wear_styles.png"}
           alt={"bespoke or ready to wear, 2 black men"}
           fill
           className={"object-cover object-left-top md:object-top"}
@@ -458,7 +458,7 @@ const Home: FC = () => {
                 <div className="mt-5">
                   <Link
                     target="_blank"
-                    href="https://groups.fitted.ng/signup"
+                    href="https://groupsapp.fitted.ng/signup"
                     className="btn-primary px-6 py-3  text-sm rounded-lg"
                   >
                     Start now

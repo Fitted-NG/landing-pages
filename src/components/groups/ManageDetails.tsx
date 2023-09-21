@@ -4,6 +4,7 @@ import Image1 from "/public/manage-details-1.png";
 import Image2 from "/public/manage-details-2.png";
 import Image3 from "/public/manage-details-3.png";
 import Image4 from "/public/manage-details-4.png";
+import Link from "next/link";
 
 export default function ManageDetails() {
   return (
@@ -100,12 +101,12 @@ export default function ManageDetails() {
         </div>
 
         <div className="w-full md:w-2/3 mx-auto flex md:justify-center items-center">
-          <a
-            href="https://groups.fitted.ng/login"
+          <Link
+            href="https://groupsapp.fitted.ng/login"
             className="w-full md:w-[initial]"
           >
             <Button type="purple">Create invite to group</Button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import Measurement1 from "/public/measurement-1.png";
+import Link from "next/link";
 
 export default function SendMeasurements() {
   return (
@@ -22,18 +23,18 @@ export default function SendMeasurements() {
               </div>
 
               <div className="flex flex-col gap-3 justify-center items-center lg:items-start w-full md:w-2/3 lg:w-full mx-auto">
-                <a
-                  href="https://groups.fitted.ng/login"
+                <Link
+                  href="https://groupsapp.fitted.ng/login"
                   className="w-full lg:w-[initial]"
                 >
                   <Button type="purple">Send Measurement</Button>
-                </a>
-                <a
-                  href="https://groups.fitted.ng/login"
+                </Link>
+                <Link
+                  href="https://groupsapp.fitted.ng/login"
                   className="w-full lg:w-[initial]"
                 >
                   <Button type="white">Try Measurements AI</Button>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -79,12 +80,12 @@ export default function SendMeasurements() {
           </div>
 
           <div className="text-center w-3/4 md:w-2/3 lg:w-full mx-auto">
-            <a
-              href="https://groups.fitted.ng/login"
+            <Link
+              href="https://groupsapp.fitted.ng/login"
               className="w-full lg:w-[initial]"
             >
               <Button type="white">Get started</Button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="absolute w-[300px] h-[250px] -top-10 right-[calc(50%-250px)] lg:right-[135px] overflow-hidden">
