@@ -30,7 +30,7 @@ export default function Sidebar() {
 
       <div className="flex flex-col gap-7 text-[#1E1E1E] text-sm mb-28">
         <a href="https://store.fitted.ng">Shop</a>
-        <a href="tailors.fitted.ng/signup">Tailors</a>
+        <a href="https://fitted.fashion/tailors">Tailors</a>
         <a href="https://fitted.fashion/groups">Groups</a>
         <a href="https://support.fitted.ng">Support</a>
         <a href="https://blog.fitted.ng">Blog</a>

@@ -52,7 +52,7 @@ export default function TailorsHeroSection() {
           </p>
 
           <div className="mt-6">
-            <Link href="https://tailors.fitted.ng/signup">
+            <Link href="https://tailorsapp.fitted.ng/signup">
               <Button type="purple">Get Started</Button>
             </Link>
           </div>
