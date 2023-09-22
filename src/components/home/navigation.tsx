@@ -4,7 +4,6 @@ import logoWhite from "@/components/home/images/Logo-white.svg";
 import logoDark from "@/components/home/images/Logo-black.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { Bag2 } from "iconsax-react";
 
 export function Navigation() {
   const [navbar, setNavbar] = useState(false);
@@ -61,27 +60,37 @@ export function Navigation() {
               }`}
             >
               <Link
-                href="http://store.fitted.ng"
+                href="https://store.fitted.ng"
+                target="_blank"
                 className="hover:text-pink-fitted"
               >
                 Shop
               </Link>
 
-              <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+              <Link className="hover:text-pink-fitted" href="/tailors">
                 Tailors
               </Link>
 
-              <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+              <Link
+                className="hover:text-pink-fitted"
+                href="https://store.fitted.ng/shop/"
+                target="_blank"
+              >
                 Customers
               </Link>
 
-              <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+              <Link
+                className="hover:text-pink-fitted"
+                href="https://support.fitted.ng"
+                target="_blank"
+              >
                 Support
               </Link>
 
               <Link
                 className="hover:text-pink-fitted"
-                href="https://fitted.fashion/blog"
+                href="https://blog.fitted.ng"
+                target="_blank"
               >
                 Blog
               </Link>
