@@ -11,7 +11,7 @@ export function AsoEbiStylesFooter() {
           </div>
           <div className="flex justify-end">
             <a
-              href="https://groups.fitted.ng/signup"
+              href="https://groupsapp.fitted.ng/signup"
               className="bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px]"
             >
               Learn More

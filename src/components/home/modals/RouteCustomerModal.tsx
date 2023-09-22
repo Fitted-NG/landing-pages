@@ -70,7 +70,7 @@ const RouteCustomerModal = () => {
             />
           </Link>
           <Link
-            href={"https://groups.fitted.ng/signup"}
+            href={"https://groupsapp.fitted.ng/signup"}
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-1/2 h-72 overflow-hidden get_started_modal_btns`}
             //   onClick={() => handleClickGetStarted('customer')}
           >

@@ -10,7 +10,7 @@ export default function Sidebar() {
 
   return (
     <nav
-      className={`bg-white w-full h-[610px] px-6 pt-[18px] shadow-md transition-all duration-300 fixed top-0 z-10 md:hidden ${
+      className={`bg-white w-full h-[610px] px-6 pt-[18px] shadow-md transition-all duration-300 fixed top-0 z-10 lg:hidden ${
         isOpen ? "left-0" : "-left-full"
       }`}
     >
@@ -25,9 +25,11 @@ export default function Sidebar() {
       </div>
 
       <div className="flex flex-col gap-7 text-[#1E1E1E] text-sm mb-28">
-        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Tailors</a>
+        <a href="#">Groups</a>
         <a href="#">Support</a>
-        <a href="#">Careers</a>
+        <a href="#">Blog</a>
       </div>
 
       <div className="flex flex-col justify-center items-center gap-3">
