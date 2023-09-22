@@ -121,7 +121,7 @@ const Home: FC = () => {
                     onClick={() => modals.toggle("RouteCustomerModal")}
                     className="rounded-lg font-medium text-base px-12 py-3 btn-primary btn-hover-anim mb-6"
                   >
-                    <span className="">Get started as customer</span>
+                    <span className="">Get started</span>
                   </button>
 
                   <p className={"text-sm"}>
@@ -242,7 +242,7 @@ const Home: FC = () => {
                   >
                     <div className="mb-4">
                       <h3 className="text-[36px] leading-[44px] font-bold font-kotori-rose">
-                        Introducing: fashion royalties!
+                        Introducing: Fashion Royalties!
                       </h3>
                     </div>
                     <div className="text-[20px] leading-[30px]">
@@ -364,7 +364,8 @@ const Home: FC = () => {
                   Powered by tailors on fitted app
                 </h3>
                 <p className={"text-lg lg:text-xl"}>
-                  Check out our trendy designs from our vetted tailors
+                  Thousands of tailors spanning 13 countries. Its like Uber for
+                  tailors
                 </p>
               </div>
             </div>
@@ -413,13 +414,13 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className="bg-white relative h-[750px]">
+      <section className="bg-white relative w-full h-[750px]">
         <Image
-          src={"/ready_to_wear_styles.png"}
+          src={"/classic_man_and_woman.png"}
           alt={"bespoke or ready to wear, 2 black men"}
           fill
-          className={"object-cover object-left-top md:object-top"}
-          loading={"lazy"}
+          className={"object-cover object-center"}
+          loading="lazy"
         />
         <div className="banner__overlay rounded-lg"></div>
 
@@ -474,7 +475,7 @@ const Home: FC = () => {
               >
                 <div className="mb-4">
                   <h3 className="text-[36px] font-bold ">
-                    Standard products vetted for quality
+                    Quality products carefully vetted to your standard{" "}
                   </h3>
                 </div>
                 <div className="mb-3 pb-2 text-xl leading-[1.5]">
@@ -509,7 +510,7 @@ const Home: FC = () => {
           <div className="container mx-auto px-2 md:px-6 max-w-5xl w-full pt-12 md:pt-20  pb-28 mb-6 text-white">
             <div className="flex items-center justify-center text-center gap-3 flex-col">
               <h2 className="text-[48px] lg:text-[68px] leading-[82.88px] font-bold font-kotori-rose">
-                Order whatever you can imagine (text to design AI)
+                Your fashion crystal ball (text to design ai){" "}
               </h2>
 
               <div className="max-w-3xl mx-auto">
@@ -523,7 +524,7 @@ const Home: FC = () => {
                     className="text-white btn-hover-anim btn-primary px-12 py-4 text-sm rounded-lg"
                     aria-disabled="true"
                   >
-                    Get early access
+                    Generate your style
                   </button>
                 </div>
               </div>
@@ -572,7 +573,7 @@ const Home: FC = () => {
                     </div>
                     <button
                       type="submit"
-                      className="btn cta-form-button  mt-3 md:mt-0 flex-1 whitespace-nowrap h-14"
+                      className="btn cta-form-button px-2 mt-3 md:mt-0 flex-1 whitespace-nowrap h-14"
                     >
                       Get Started
                     </button>

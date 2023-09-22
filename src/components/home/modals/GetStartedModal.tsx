@@ -46,11 +46,11 @@ const GetStartedModal = () => {
           </button>
         </div>
 
-        <div className="flex items-center justify-around py-5 my-3 w-full gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 place-items-center py-5 my-3 w-full gap-3">
           <Link
             href="https://store.fitted.ng"
             target="_blank"
-            className={`block relative rounded-lg border transition duration-150 ease-in-out w-1/2 h-72 overflow-hidden get_started_modal_btns`}
+            className={`block relative rounded-lg border transition duration-150 ease-in-out w-3/4 md:w-full h-72 overflow-hidden get_started_modal_btns`}
           >
             <div
               className="absolute w-full h-full top-0 left-0 rounded-lg"
@@ -71,12 +71,14 @@ const GetStartedModal = () => {
               src="/customer_type_2.png"
               fill
               alt=""
-              className="object-cover rounded-lg -z-20"
+              className="object-cover object-center rounded-lg -z-20"
             />
           </Link>
+
           <Link
-            href={"/tailors"}
-            className={`block relative rounded-lg border transition duration-150 ease-in-out w-1/2 h-72 overflow-hidden get_started_modal_btns`}
+            href="https://tailors.fitted.ng/signin"
+            target="_blank"
+            className={`block relative rounded-lg border transition duration-150 ease-in-out w-3/4 md:w-full h-72 overflow-hidden get_started_modal_btns`}
           >
             <div
               className="absolute w-full h-full top-0 left-0 rounded-lg"
@@ -97,7 +99,7 @@ const GetStartedModal = () => {
               src="/tailor_type.png"
               fill
               alt=""
-              className="object-cover rounded-lg -z-20"
+              className="object-cover object-center rounded-lg -z-20"
             />
           </Link>
         </div>

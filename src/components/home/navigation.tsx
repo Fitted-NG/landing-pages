@@ -1,14 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import logoWhite from "@/components/home/images/Logo-white.svg";
 import logoDark from "@/components/home/images/Logo-black.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 export function Navigation() {
   const [navbar, setNavbar] = useState(false);
   const [navbarLogo, setNavbarLogo] = useState(logoWhite);
   const [isOpen, setIsOpen] = useState(false);
+  const { modals } = useContext(ThemeContext);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -77,12 +79,8 @@ export function Navigation() {
                   Tailors
                 </Link>
 
-                <Link
-                  className="hover:text-pink-fitted"
-                  href="https://store.fitted.ng/shop/"
-                  target="_blank"
-                >
-                  Customers
+                <Link className="hover:text-pink-fitted" href="/groups">
+                  Groups
                 </Link>
 
                 <Link
@@ -134,12 +132,12 @@ export function Navigation() {
             <div className="hidden lg:block w-full lg:w-auto lg:text-center">
               <div className="navbar-menu flex items-center">
                 <div className="flex items-center">
-                  <Link
-                    href="https://tailors.fitted.ng"
-                    className="block lg:inline-block btn-primary btn-hover-anim rounded-lg py-2 px-4 transition duration-300 ease"
+                  <button
+                    onClick={() => modals.toggle("RouteCustomerModal")}
+                    className="block lg:inline-block btn-primary btn-hover-anim rounded-lg py-2 px-12 transition duration-300 ease"
                   >
-                    Create account
-                  </Link>
+                    Log In
+                  </button>
                 </div>
               </div>
             </div>
@@ -147,7 +145,14 @@ export function Navigation() {
         </div>
       </header>
 
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Sidebar
+        isOpen={isOpen}
+        toggleSidebar={toggleSidebar}
+        toggleModal={() => {
+          setIsOpen(!isOpen);
+          modals.toggle("RouteCustomerModal");
+        }}
+      />
     </>
   );
 }
@@ -155,9 +160,11 @@ export function Navigation() {
 function Sidebar({
   isOpen,
   toggleSidebar,
+  toggleModal,
 }: {
   isOpen: boolean;
   toggleSidebar: () => void;
+  toggleModal: () => void;
 }) {
   return (
     <nav
@@ -182,8 +189,8 @@ function Sidebar({
           Shop
         </Link>
         <Link href="/tailors">Tailors</Link>
-        <Link href="https://store.fitted.ng/shop" target="_blank">
-          Customers
+        <Link href="/groups" target="_blank">
+          Groups
         </Link>
         <Link href="https://support.fitted.ng" target="_blank">
           Support
@@ -194,12 +201,12 @@ function Sidebar({
       </div>
 
       <div className="flex flex-col justify-center items-center gap-3">
-        <Link
-          href="https://tailors.fitted.ng"
+        <button
+          onClick={toggleModal}
           className="w-full text-center btn-primary btn-hover-anim rounded-lg py-3 px-[22px] transition duration-300 ease"
         >
-          Create account
-        </Link>
+          Log In
+        </button>
       </div>
     </nav>
   );
