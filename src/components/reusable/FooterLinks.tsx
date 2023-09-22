@@ -8,7 +8,7 @@ export default function FooterLinks() {
   return (
     <div>
       <div className="flex flex-wrap gap-2 lg:gap-14 justify-between lg:justify-center mb-6 lg:mb-7">
-        <Link href="https://fitted.ng" target="_blank" rel="noreferrer">
+        <Link href="/" rel="noreferrer">
           Home
         </Link>
         <Link

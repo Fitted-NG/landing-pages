@@ -2,7 +2,7 @@
 import { ThemeContext } from "@/contexts/ThemeContext";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 const GetStartedModal = () => {
   const themeContext = useContext(ThemeContext);
@@ -18,7 +18,7 @@ const GetStartedModal = () => {
       <div className="modal__box-wrapper shadow-lg rounded-2xl">
         <div className=" mb-2 pt-4">
           <div className="flex items-center justify-center flex-col gap-3 grow">
-            <p className="mb-3 font-kotori-rose text-[#1E1E1E] text-2xl">
+            <p className="mb-3 font-kotori-rose text-[#1E1E1E] text-2xl font-bold">
               What type of user are you?
             </p>
           </div>
@@ -48,9 +48,9 @@ const GetStartedModal = () => {
 
         <div className="flex items-center justify-around py-5 my-3 w-full gap-3">
           <Link
-            href={"/auth/signup?type=customer"}
+            href="https://store.fitted.ng"
+            target="_blank"
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-1/2 h-72 overflow-hidden get_started_modal_btns`}
-            //   onClick={() => handleClickGetStarted('customer')}
           >
             <div
               className="absolute w-full h-full top-0 left-0 rounded-lg"
@@ -60,24 +60,23 @@ const GetStartedModal = () => {
               }}
             >
               <div className=" text-white px-3 py-4 z-10 text h-full w-full justify-end flex flex-col items-center">
-                <h4 className="font-bold text-lg">Store</h4>
-                <p className="text-sm">
-                  Vestibulum enim nulla aliquet cursus aliquam. Sed purus
-                  lacinia egestas.
+                <h4 className="font-bold text-lg">Customer</h4>
+                <p className="text-sm text-center">
+                  Get excellent collection of styles or Aso Ebi for any event or
+                  group!
                 </p>
               </div>
             </div>
             <Image
-              src="/GetStartedImage2.png"
+              src="/customer_type_2.png"
               fill
               alt=""
               className="object-cover rounded-lg -z-20"
             />
           </Link>
           <Link
-            href={"/auth/signup?type=tailor"}
+            href={"/tailors"}
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-1/2 h-72 overflow-hidden get_started_modal_btns`}
-            //   onClick={() => handleClickGetStarted('customer')}
           >
             <div
               className="absolute w-full h-full top-0 left-0 rounded-lg"
@@ -88,14 +87,14 @@ const GetStartedModal = () => {
             >
               <div className=" text-white px-3 py-4 z-10 text h-full w-full justify-end flex flex-col items-center">
                 <h4 className="font-bold text-lg">Tailor</h4>
-                <p className="text-sm">
-                  Vestibulum enim nulla aliquet cursus aliquam. Sed purus
-                  lacinia egestas.
+                <p className="text-sm text-center">
+                  Simplify your tailoring business and focus more on what
+                  matters
                 </p>
               </div>
             </div>
             <Image
-              src="/GetStartedImage1.png"
+              src="/tailor_type.png"
               fill
               alt=""
               className="object-cover rounded-lg -z-20"
