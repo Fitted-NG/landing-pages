@@ -12,7 +12,7 @@ export default function FashionBrand() {
           <p className="font-avenir text-[#4F4F4F] font-light mt-4 mb-4 sm:max-w-[370px] lg:w-[514px] text-lg">
              Take your fashion business to the next level by focusing on what matters. Scale the production of your fashion pieces and designs without the headache of Tailor recruitment.
           </p>
-           <Link href="https://tailors.fitted.ng/signup">
+           <Link href="https://tailorsapp.fitted.ng/signup">
              <Button type="blue">Join as fashion brand</Button>
            </Link>
         </div>
