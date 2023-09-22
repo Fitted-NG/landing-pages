@@ -403,12 +403,12 @@ const Home: FC = () => {
             ))}
           </div>
           <div className="flex items-center justify-center mt-8 pt-3">
-            <a
+            <Link
               className="text-white btn-hover-anim btn-primary px-11 py-3 text-sm rounded-lg"
               href="https://store.fitted.ng/"
             >
               Go to Store
-            </a>
+            </Link>
           </div>
         </div>
       </section>
