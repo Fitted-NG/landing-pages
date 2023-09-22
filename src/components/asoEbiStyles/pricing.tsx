@@ -27,7 +27,7 @@ export default function AsoEbiStylesPricing() {
               </div>
 
               <a
-                href="https://groups.fitted.ng/signup?group=aso-ebi&price=50000"
+                href="https://groupsapp.fitted.ng/signup?group=aso-ebi&price=50000"
                 className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
               >
                 Create Order
@@ -55,7 +55,7 @@ export default function AsoEbiStylesPricing() {
                 </ul>
               </div>
               <a
-                href="https://groups.fitted.ng/signup?group=brides-maids&price=40000"
+                href="https://groupsapp.fitted.ng/signup?group=brides-maids&price=40000"
                 className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
               >
                 Create Order
@@ -84,7 +84,7 @@ export default function AsoEbiStylesPricing() {
                 </ul>
               </div>
               <a
-                href="https://groups.fitted.ng/signup?group=familys&price=60000"
+                href="https://groupsapp.fitted.ng/signup?group=familys&price=60000"
                 className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
               >
                 Create Order
