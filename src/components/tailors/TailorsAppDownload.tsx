@@ -5,7 +5,7 @@ import PlayStoreLogo from "/public/play-store.png";
 
 export default function TailorsAppDownload() {
   return (
-    <section className="bg-[#040C31] sm:px-16 px-8 py-12">
+    <section className="bg-[#040C31] sm:px-16 px-8 sm:py-24 py-16">
       <div className="container mx-auto flex justify-between items-center sm:flex-row flex-col gap-10 w-full">
         <div className="flex flex-1 flex-col">
           <h2 className="font-korori-rose text-white capitalize text-2xl lg:text-3xl font-bold lg:max-w-lg">
@@ -31,8 +31,7 @@ export default function TailorsAppDownload() {
           </div>
         </div>
 
-        <div className="flex flex-1 justify-center items-center">
-          {/* revist here  */}
+        <div className="flex flex-1 justify-center items-center max-sm:mt-20">
           <div className="relative ">
             <Image
               src={MobilePhone}

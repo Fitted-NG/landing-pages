@@ -29,7 +29,7 @@ export default function BrandsTailors() {
         </div>
 
         <div className="flex flex-col items-center">
-         <Button type="blue">Join us today</Button>
+          <Button type="blue">Join us today</Button>
         </div>
 
       </div>
