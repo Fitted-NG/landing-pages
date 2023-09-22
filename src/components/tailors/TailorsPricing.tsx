@@ -41,7 +41,7 @@ export default function TailorsPricing() {
             <ListItem>Send & receive measurements</ListItem>
 
             <div className="flex flex-col items-center mt-10">
-            <Link href="https://tailors.fitted.ng/signup">
+            <Link href="https://tailorsapp.fitted.ng/signup">
               <Button type="purple">Get Started</Button>
               </Link>
             </div>
