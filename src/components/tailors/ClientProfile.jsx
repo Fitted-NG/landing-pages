@@ -1,7 +1,6 @@
-import React from 'react'
 import ClientProfileCarousel from './ClientProfileCarousel'
 
-export default function Me() {
+export default function Me () {
   return (
     <section className="bg-white-500 max-w-[1440px] mx-auto mt-10">
         <div className="bg-white sm:px-16 px-8 mb-16">
