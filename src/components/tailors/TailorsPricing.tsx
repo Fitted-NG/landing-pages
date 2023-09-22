@@ -48,7 +48,7 @@ export default function TailorsPricing() {
           <div className="bg-white rounded-lg shadow-lg w-[320px] lg:w-[320px] p-4 pt-10 pb-10">
             <div className="flex flex-col items-center text-center gap-3">
               <Image src={SecondPricingIcon} alt="first pricing icon" />
-              <p className="text-[#5773FF] text-lg font-normal font-avenir">TAILR APP + JOBS</p>
+              <p className="text-[#5773FF] text-lg font-normal font-avenir">TAILOR APP + JOBS</p>
               <h2 className="text-[#101828] text-3xl font-normal font-kotori-rose">₦1,000/<span className="text-lg font-avenir text-[#667085]">month</span></h2>
               <p className="text-[#667085] font-avenir font-normal text-base mb-10">Billed annually.</p>
             </div>
