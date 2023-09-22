@@ -1,6 +1,7 @@
 import BrandLogo from "./BrandLogo";
 import { brands } from "@/utils/brandsData";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function BrandsTailors() {
   return (
@@ -29,7 +30,9 @@ export default function BrandsTailors() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Button type="blue">Join us today</Button>
+          <Link href="https://tailors.fitted.ng/signup">
+            <Button type="blue">Join us today</Button>
+          </Link>
         </div>
 
       </div>

@@ -2,6 +2,7 @@ import VideoBackground from "@/components/tailors/VideoBackground";
 import Button from "./Button";
 import Header from "./Header";
 import Menu from "./Menu";
+import Link from "next/link";
 
 export default function TailorsHeroSection() {
   return (
@@ -51,7 +52,9 @@ export default function TailorsHeroSection() {
           </p>
 
           <div className="mt-6">
-            <Button type="purple">Get Started</Button>
+            <Link href="https://tailors.fitted.ng/signup">
+              <Button type="purple">Get Started</Button>
+            </Link>
           </div>
         </div>
       </div>

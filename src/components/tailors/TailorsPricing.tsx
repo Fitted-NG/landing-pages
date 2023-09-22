@@ -3,6 +3,7 @@ import FirstPricingIcon from "/public/pricing-icon-one.png"
 import SecondPricingIcon from "/public/pricing-icon-two.png"
 import ListItem from "./ListItem";
 import Button from "./Button";
+import Link from "next/link";
 
 
 export default function TailorsPricing() {
@@ -40,7 +41,9 @@ export default function TailorsPricing() {
             <ListItem>Send & receive measurements</ListItem>
 
             <div className="flex flex-col items-center mt-10">
+            <Link href="https://tailors.fitted.ng/signup">
               <Button type="purple">Get Started</Button>
+              </Link>
             </div>
           </div>
 
