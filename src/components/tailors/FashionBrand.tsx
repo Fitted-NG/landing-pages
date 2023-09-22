@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import FashionBrandImage from "/public/fashion-brand-lady.png";
+import Link from "next/link";
 
 export default function FashionBrand() {
   return (
@@ -11,7 +12,9 @@ export default function FashionBrand() {
           <p className="font-avenir text-[#4F4F4F] font-light mt-4 mb-4 sm:max-w-[370px] lg:w-[514px] text-lg">
              Take your fashion business to the next level by focusing on what matters. Scale the production of your fashion pieces and designs without the headache of Tailor recruitment.
           </p>
-          <Button type="blue">Join as fashion brand</Button>
+           <Link href="https://tailors.fitted.ng/signup">
+             <Button type="blue">Join as fashion brand</Button>
+           </Link>
         </div>
 
         <div className="flex flex-col">
