@@ -126,12 +126,13 @@ const Home: FC = () => {
 
                   <p className={"text-sm"}>
                     Need help?
-                    <a
-                      href={"mailto:hello@fitted.ng"}
+                    <Link
+                      href="https://support.fitted.ng"
+                      target="_blank"
                       className="underline underline-offset-2 pl-1"
                     >
                       Contact us here
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>

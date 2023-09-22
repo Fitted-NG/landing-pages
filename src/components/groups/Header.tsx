@@ -63,34 +63,46 @@ export default function Header() {
           }`}
         >
           <Link
-            href="http://store.fitted.ng"
+            href="https://store.fitted.ng"
+            target="_blank"
             className="hover:text-pink-fitted"
           >
             Shop
           </Link>
 
-          <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+          <Link className="hover:text-pink-fitted" href="/tailors">
             Tailors
           </Link>
 
-          <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+          <Link
+            className="hover:text-pink-fitted"
+            href="https://store.fitted.ng/shop"
+            target="_blank"
+          >
             Customers
           </Link>
 
-          <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+          <Link
+            className="hover:text-pink-fitted"
+            href="https://support.fitted.ng"
+            target="_blank"
+          >
             Support
           </Link>
 
           <Link
             className="hover:text-pink-fitted"
-            href="https://fitted.fashion/blog"
+            href="https://blog.fitted.ng"
+            target="_blank"
           >
             Blog
           </Link>
         </div>
 
         <div className="w-[110px] h-10 md:w-[160px] xl:relative xl:-left-10 flex justify-center items-center">
-          <Image src={navbarLogo} alt="logo" loading="lazy" />
+          <Link href="/">
+            <Image src={navbarLogo} alt="logo" loading="lazy" />
+          </Link>
         </div>
 
         <Menu navBarScrollStatus={navbar} />
