@@ -184,10 +184,10 @@ export default function AsoEbiStylesPricing() {
               </div>
               <div className="">
                 <h2 className="mb-2 text-2xl font-bold">
-                  Payment Co-odination
+                  Payment Co-ordination
                 </h2>
                 <p className="text-lg">
-                  The only thing more stressful then finding the perfect tailor
+                  The only thing more stressful than finding the perfect tailor
                   is getting prompt payments from invitees. Get a personalized
                   dashboard to manage payments status.
                 </p>
