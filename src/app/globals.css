@@ -47,14 +47,13 @@ h6 {
   }
 }
 
-
 /*  ======= DEFAULT  ======== */
 
 * {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  --main-color: #B7076B;
+  --main-color: #b7076b;
 }
 
 .padded-section {
@@ -97,7 +96,7 @@ body {
   background-color: #b7076b;
 }
 .btn-hover-anim:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -109,7 +108,7 @@ body {
   background-color: #9e065c;
 }
 .btn-hover-anim:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -133,9 +132,9 @@ body {
   top: 0;
   left: 0;
   background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0) 65.1%,
-          rgba(10, 10, 10, 0.8) 84.37%
+    180deg,
+    rgba(0, 0, 0, 0) 65.1%,
+    rgba(10, 10, 10, 0.8) 84.37%
   );
 }
 .banner__overlay2 {
@@ -146,13 +145,13 @@ body {
   top: 0;
   left: 0;
   background: linear-gradient(
-          180deg,
-          rgba(20, 20, 20, 0) 44.27%,
-          rgba(20, 20, 20, 0.48) 82.29%
+    180deg,
+    rgba(20, 20, 20, 0) 44.27%,
+    rgba(20, 20, 20, 0.48) 82.29%
   );
 }
 
-.shadow-default{
+.shadow-default {
   box-shadow: 0 12px 32px -12px rgb(12 22 44 / 32%);
 }
 
@@ -330,7 +329,7 @@ header.scrolled .btn-secondary {
 }
 
 /* ================= MODAL ====================*/
-.modal__box{
+.modal__box {
   position: fixed;
   display: block;
   display: -ms-flexbox;
@@ -346,19 +345,17 @@ header.scrolled .btn-secondary {
   height: 100%;
   z-index: 100;
   overflow-x: hidden;
-  background-color: rgba(31,32,41,.75);
+  background-color: rgba(31, 32, 41, 0.75);
   pointer-events: none;
   opacity: 0;
   transition: opacity 250ms 300ms ease;
-
-
 }
 
-.modal__box-wrapper{
+.modal__box-wrapper {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 1027px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -372,20 +369,20 @@ header.scrolled .btn-secondary {
   opacity: 0;
   transform: scale(0.6);
   /* transition: opacity 250ms 250ms ease, transform 300ms 250ms ease; */
-  transition: opacity 200ms 150ms ease, transform 200ms 150ms ease;
+  transition:
+    opacity 200ms 150ms ease,
+    transform 200ms 150ms ease;
 
   padding: 20px 25px;
 }
 
-
-.modal__box.show{
+.modal__box.show {
   pointer-events: auto;
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
 
-
-.modal__box.show .modal__box-wrapper{
+.modal__box.show .modal__box-wrapper {
   opacity: 1;
   transform: scale(1);
   transition: all 200ms ease-in-out;
@@ -393,22 +390,22 @@ header.scrolled .btn-secondary {
 
 /* react-tabs__tab--selected */
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
   .modal__box-wrapper {
-    max-width: 700px;
+    max-width: 800px;
   }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .modal__box-wrapper {
     width: calc(100% - 40px);
   }
 }
 
-.get_started_modal_btns:hover img{
+.get_started_modal_btns:hover img {
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
 }
-.get_started_modal_btns img{
+.get_started_modal_btns img {
   transition: all 0.3s ease-in-out;
 }
 
@@ -485,24 +482,21 @@ header.scrolled .btn-secondary {
 }
 
 .hero-video-linear-gradient {
-  background: linear-gradient(0deg, rgba(30, 30, 30, 0.8) 0%, rgba(30, 30, 30, 0.8) 100%), transparent -228.065px -41.191px / 126.024% 104.835% no-repeat;
+  background:
+    linear-gradient(0deg, rgba(30, 30, 30, 0.8) 0%, rgba(30, 30, 30, 0.8) 100%),
+    transparent -228.065px -41.191px / 126.024% 104.835% no-repeat;
 }
 .group-linear-background {
-  background: linear-gradient(359deg, #1E1E1E 0%, rgba(30, 30, 30, 0.00) 100%);
+  background: linear-gradient(359deg, #1e1e1e 0%, rgba(30, 30, 30, 0) 100%);
 }
-
-
-
-
-
 
 /* ================= Tailors Header Changing Text animations ====================*/
 
-.roller{
-  height:40px;
+.roller {
+  height: 40px;
   line-height: 64px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   width: 500px;
   display: flex;
   justify-content: center;
@@ -513,31 +507,30 @@ header.scrolled .btn-secondary {
   color: whit;
 }
 
-
 .roller #rolltext {
   position: absolute;
   top: 0;
-  animation: slide 10s infinite;  
+  animation: slide 10s infinite;
 }
 
 @keyframes slide {
-  0%{
-    top:0;
+  0% {
+    top: 0;
   }
-  50%{
-    top: -90px; 
-    color: yellow 
+  50% {
+    top: -90px;
+    color: yellow;
   }
-  55%{
+  55% {
     top: -128px;
-    color: purple
+    color: purple;
   }
-  75%{
+  75% {
     top: -196px;
-    color: green
+    color: green;
   }
-  100%{
+  100% {
     top: -196px;
-    color: green
+    color: green;
   }
 }

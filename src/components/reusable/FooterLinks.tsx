@@ -8,9 +8,9 @@ export default function FooterLinks() {
   return (
     <div>
       <div className="flex flex-wrap gap-2 lg:gap-14 justify-between lg:justify-center mb-6 lg:mb-7">
-        <Link href="/" rel="noreferrer">
-          Home
-        </Link>
+        <Link href="/">Home</Link>
+        <Link href="/tailors">Tailors</Link>
+        <Link href="/groups">Groups</Link>
         <Link
           href="https://indigo-tin-97a.notion.site/Fitted-Support-Center-191dcd17279041949527825deb2624e7"
           target="_blank"

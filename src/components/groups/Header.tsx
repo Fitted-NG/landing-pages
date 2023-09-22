@@ -76,14 +76,6 @@ export default function Header() {
 
           <Link
             className="hover:text-pink-fitted"
-            href="https://store.fitted.ng/shop"
-            target="_blank"
-          >
-            Customers
-          </Link>
-
-          <Link
-            className="hover:text-pink-fitted"
             href="https://support.fitted.ng"
             target="_blank"
           >
