@@ -55,30 +55,40 @@ export function Navigation() {
       <div className="container mx-auto max-w-7xl">
         <nav className="flex items-center justify-between px-3 lg:px-6 py-4 whitespace-nowrap text-sm">
           <div className="hidden lg:order-1 lg:block lg:w-auto lg:text-center">
-            <div className="navbar-menu flex items-center justify-end md:gap-8 lg:gap-9">
+            <div
+              className={`hidden lg:flex items-center lg:gap-8 font-medium ${
+                navbar ? "text-[#1E1E1E]" : "text-white"
+              }`}
+            >
               <Link
                 href="http://store.fitted.ng"
-                className="block lg:inline-block  hover:text-[#b7076b]"
+                className="hover:text-pink-fitted"
               >
                 Shop
               </Link>
 
-              <Link
-                className="block lg:inline-block  hover:text-[#b7076b] "
-                href="https://fitted.ng"
-              >
-                Company
+              <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+                Tailors
               </Link>
-              {/*<Link
-                className="block lg:inline-block  hover:text-[#b7076b] "
+
+              <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+                Customers
+              </Link>
+
+              <Link className="hover:text-pink-fitted" href="https://fitted.ng">
+                Support
+              </Link>
+
+              <Link
+                className="hover:text-pink-fitted"
                 href="https://fitted.fashion/blog"
               >
                 Blog
-              </Link>*/}
+              </Link>
             </div>
           </div>
 
-          <div className="lg:order-2 w-auto lg:w-1/4 lg:text-center">
+          <div className="lg:order-2 lg:relative lg:-left-16 w-auto lg:w-1/4 lg:text-center">
             <Link
               href="/"
               className="text-xl text-gray-800 font-semibold font-heading flex items-center justify-center"
@@ -92,8 +102,9 @@ export function Navigation() {
               />
             </Link>
           </div>
+
           <div className="block lg:hidden">
-            <button className="navbar-burger flex items-center py-2 px-3 text-[#b7076b] rounded ">
+            <button className="navbar-burger flex items-center py-2 px-3 text-[#b7076b] rounded">
               <svg
                 className="fill-current h-5 w-5"
                 viewBox="0 0 20 20"
@@ -105,56 +116,14 @@ export function Navigation() {
             </button>
           </div>
           <div className="hidden lg:order-3 lg:block w-full lg:w-auto lg:text-center">
-            <div className="navbar-menu flex items-center gap-7">
-              <div className="flex items-center justify-end gap-3">
-                {/*<Link*/}
-                {/*  className="block lg:inline-block mt-4 lg:mt-0  hover:text-indigo-600"*/}
-                {/*  href="/"*/}
-                {/*>*/}
-                {/*  <span*/}
-                {/*    className={*/}
-                {/*      "rounded-full border-[#F3DBE9] border h-[51px] w-[51px] flex items-center justify-center"*/}
-                {/*    }*/}
-                {/*  >*/}
-                {/*    <SearchNormal*/}
-                {/*      className={`w-6 h-6 ${*/}
-                {/*        !navbar ? "text-white" : "text-[#1E1E1E]"*/}
-                {/*      }`}*/}
-                {/*    />*/}
-                {/*  </span>*/}
-                {/*</Link>*/}
-                <Link
-                  className="block lg:inline-block mt-4 lg:mt-0 hover:text-indigo-600"
-                  href="https://store.fitted.ng"
-                >
-                  <span
-                    className={
-                      "rounded-full border-[#F3DBE9] border h-[51px] w-[51px] flex items-center justify-center"
-                    }
-                  >
-                    <Bag2
-                      className={`w-6 h-6 ${
-                        !navbar ? "text-white" : "text-[#1E1E1E]"
-                      }`}
-                    />
-                  </span>
-                </Link>
-              </div>
-
-              <div className="flex items-center gap-4">
+            <div className="navbar-menu flex items-center">
+              <div className="flex items-center">
                 <Link
                   href="https://tailors.fitted.ng"
                   className="block lg:inline-block btn-primary btn-hover-anim rounded-lg py-2 px-4 transition duration-300 ease"
                 >
-                  For Tailors
+                  Create account
                 </Link>
-
-                {/*<Link*/}
-                {/*  href="/auth/login?type=customer"*/}
-                {/*  className="block lg:inline-block btn-secondary btn-hover-anim before:bg-[#FFD0EB] after:bg-white border border-white hover:border-transparent rounded-lg py-2.5 px-4 transition duration-300 ease"*/}
-                {/*>*/}
-                {/*  Log In*/}
-                {/*</Link>*/}
               </div>
             </div>
           </div>

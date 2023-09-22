@@ -1,14 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import FacebookIcon from "/public/icons/footer-facebook.svg";
 import YoutubeIcon from "/public/icons/footer-youtube.svg";
 import InstagramIcon from "/public/icons/footer-instagram.svg";
+import Link from "next/link";
 
 export default function FooterSocials() {
   return (
     <div className="flex justify-center items-center gap-3">
-      <a
+      <Link
         href="https://www.facebook.com/fitted.ng/"
         target="_blank"
         rel="noreferrer"
@@ -20,9 +19,9 @@ export default function FooterSocials() {
           loading="lazy"
           className="w-1/2 h-auto"
         />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://www.youtube.com/channel/UCHcrTqV2Z2L391s_HGPb2Og"
         target="_blank"
         rel="noreferrer"
@@ -34,9 +33,9 @@ export default function FooterSocials() {
           loading="lazy"
           className="w-1/2 h-auto"
         />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://www.instagram.com/fitted.ng/"
         target="_blank"
         rel="noreferrer"
@@ -48,7 +47,7 @@ export default function FooterSocials() {
           loading="lazy"
           className="w-1/2 h-auto"
         />
-      </a>
+      </Link>
     </div>
   );
 }
