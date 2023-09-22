@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { avenir, kotoriRose } from "@/fonts";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Fitted Fashion",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${avenir.className} ${kotoriRose.variable} ${avenir.variable}`}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

@@ -173,7 +173,7 @@ export default function AsoEbiStylesStep() {
                     </p>
                     <p className={"mb-2"}>
                       Leveraging our{" "}
-                      <a href="https://groups.fitted.ng/signup" className="">
+                      <a href="https://groupsapp.fitted.ng/signup" className="">
                         platform
                       </a>{" "}
                       you can organize communication & measurements & styles

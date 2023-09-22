@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import AutoMeasurement from "/public/auto-measurement.png";
 import ManualMeasurement from "/public/manuel-measurement.png";
+import SizeChart from "/public/sizechart.png";
+import Button from './Button';
 
 export default function ClothingTabsSwitch() {
   const [currentTab, setCurrentTab] = useState(1);
@@ -18,12 +20,12 @@ export default function ClothingTabsSwitch() {
   };
 
   return (
-    <section className="bg-slate-100 sm:px-16 px-8 sm:py-24 py-12">
+    <section className="bg-white sm:px-16 sm:py-24 py-12">
       <div className="flex flex-col justify-center items-center">
-        <div className="bg-lime-500 p-1 px-3 rounded-full">
+        <div className="bg-[#F2F4F5] p-1 px-3 rounded-full">
           <button
             className={`rounded-full p-1 px-3 ${
-              currentTab === 1 ? "bg-blue-800 text-white" : "text-red-500"
+              currentTab === 1 ? "bg-blue-fitted text-white" : "text-dark-tab"
             }`}
             onClick={handleTabOne}
           >
@@ -31,7 +33,7 @@ export default function ClothingTabsSwitch() {
           </button>
           <button
             className={`rounded-full p-1 px-4 ${
-              currentTab === 2 ? "bg-blue-800 text-white" : "text-red-500"
+              currentTab === 2 ? "bg-blue-fitted text-white" : "text-dark-tab"
             }`}
             onClick={handleTabTwo}
           >
@@ -39,11 +41,11 @@ export default function ClothingTabsSwitch() {
           </button>
         </div>
 
-        <div className="flex flex-row items-center justify-center mt-5 gap-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center mt-5 gap-10">
           <div className={`${currentTab === 1 ? "flex" : "hidden"} relative`}>
             <Image
-              src={ManualMeasurement}
-              alt="auto measurement"
+              src={AutoMeasurement}
+              alt="manual measurement"
               sizes="100vw"
               style={{
                 width: "100%",
@@ -51,7 +53,7 @@ export default function ClothingTabsSwitch() {
               }}
             />
 
-            <div className="absolute w-[412px] top-56 right-10 text-white">
+            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
@@ -73,37 +75,38 @@ export default function ClothingTabsSwitch() {
                 height: "50vh",
               }}
             />
-            <div className="absolute w-[412px] top-56 right-10 text-white">
+            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
-                Auto size Engine
+                Manual Measurements
               </h2>
               <p className="font-avenir text-base font-normal text-center">
-                Use body data like (height and weight) to predict your
-                customers’ measurements. Highly accurate and tested with over
-                15k people
+                Let customers input their measurements manually, as measured by yourself or a tailor
               </p>
             </div>
           </div>
 
-          <div className={`${currentTab === 2 ? "block" : "hidden"} relative`}>
+
+
+          <div className={`${currentTab === 2 ? "flex" : "hidden"} relative`}>
             <Image
-              src={ManualMeasurement}
+              src={SizeChart}
               alt="manual measurement"
-              sizes="50vw"
+              sizes="100vw"
               style={{
                 width: "100%",
                 height: "50vh",
               }}
             />
-            <div className="absolute w-[412px] top-56 right-10 text-white">
+            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white flex flex-col items-center justify-center ml-20">
               <h2 className="font-kotori-rose font-bold text-xl text-center">
                 Auto size Engine
               </h2>
               <p className="font-avenir text-base font-normal text-center">
-                Use body data like (height and weight) to predict your
-                customers’ measurements. Highly accurate and tested with over
-                15k people
+                See all sizes of outfits
               </p>
+              <div className="mt-10">
+                 <Button type="blue">Coming Soon</Button> 
+              </div>
             </div>
           </div>
         </div>
