@@ -2,6 +2,7 @@ import Image from "next/image";
 import MobilePhone from "/public/mobile-phone-download.png";
 import AppStoreLogo from "/public/app-store.png";
 import PlayStoreLogo from "/public/play-store.png";
+import Link from "next/link";
 
 export default function TailorsAppDownload() {
   return (
@@ -16,18 +17,24 @@ export default function TailorsAppDownload() {
             charging their businesses world wide
           </p>
           <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-            <Image
-              src={AppStoreLogo}
-              alt="apple-store"
-              loading="lazy"
-              className="lg:w-[140px] lg:h-[42px] w-[120px] mr-5 object-contain cursor-pointer"
-            />
-            <Image
-              src={PlayStoreLogo}
-              alt="play-store"
-              loading="lazy"
-              className="lg:w-[140px] lg:h-[42px] w-[120px] object-contain cursor-pointer"
-            />
+            <Link href="https://apps.apple.com/ng/app/fitted-tailors-app/id1609859045">
+              <Image
+                src={AppStoreLogo}
+                alt="apple-store"
+                loading="lazy"
+                className="lg:w-[140px] lg:h-[42px] w-[120px] mr-5 object-contain cursor-pointer"
+              />
+            </Link>
+            
+
+            <Link href="https://play.google.com/store/apps/details?id=tailors.fitted.ng">
+              <Image
+                src={PlayStoreLogo}
+                alt="play-store"
+                loading="lazy"
+                className="lg:w-[140px] lg:h-[42px] w-[120px] object-contain cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
 
