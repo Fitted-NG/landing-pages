@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useContext } from "react";
 import { ThemeContext } from "@/contexts/ThemeContext";
 
-const RouteCustomerModal = () => {
+const RouteCustomerModal = ({ link }: { link: string }) => {
   const { modals } = useContext(ThemeContext);
 
   return (
@@ -69,7 +69,12 @@ const RouteCustomerModal = () => {
           </Link>
 
           <Link
-            href="https://groupsapp.fitted.ng/signup"
+            href={
+              link === "signup"
+                ? "https://groupsapp.fitted.ng/signup"
+                : "https://groupsapp.fitted.ng/login"
+            }
+            target="_blank"
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-full h-72 overflow-hidden get_started_modal_btns`}
           >
             <div
@@ -96,7 +101,11 @@ const RouteCustomerModal = () => {
           </Link>
 
           <Link
-            href="https://tailors.fitted.ng/signin"
+            href={
+              link === "signup"
+                ? "https://tailorsapp.fitted.ng/signup"
+                : "https://tailorsapp.fitted.ng/signin"
+            }
             target="_blank"
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-full h-72 overflow-hidden get_started_modal_btns`}
           >

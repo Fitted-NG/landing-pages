@@ -13,6 +13,8 @@ interface ThemeContextProps {
     toggle: (modal: keyof Modals) => void;
     state: Modals;
   };
+  modalLink: string;
+  setModalLink: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const ThemeContext = createContext<ThemeContextProps>({
@@ -20,6 +22,8 @@ export const ThemeContext = createContext<ThemeContextProps>({
     state: { RouteCustomerModal: "", AiDesignWaitListModal: "" },
     toggle: function () {},
   },
+  modalLink: "",
+  setModalLink: () => {},
 });
 
 interface ThemeProviderProps {
@@ -32,6 +36,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
     RouteCustomerModal: "",
     AiDesignWaitListModal: "",
   });
+  const [modalLink, setModalLink] = useState("");
 
   const toggle = () => {
     setShowModal((prev) => (prev == "unshow" ? "show" : "unshow"));
@@ -51,6 +56,8 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
         toggle,
         showModal,
         modals: { state: modals, toggle: toggleModal },
+        modalLink,
+        setModalLink,
       }}
     >
       {children}
