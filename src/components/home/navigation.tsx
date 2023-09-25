@@ -208,7 +208,7 @@ function Sidebar({
         <button
           onClick={() => {
             setModalLink("signin");
-            toggleModal;
+            toggleModal();
           }}
           className="w-full text-center btn-primary btn-hover-anim rounded-lg py-3 px-[22px] transition duration-300 ease"
         >
