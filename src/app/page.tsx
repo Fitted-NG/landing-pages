@@ -86,7 +86,7 @@ const items: {
 ];
 
 const Home: FC = () => {
-  const { toggle, modals } = useContext(ThemeContext);
+  const { toggle, modals, modalLink, setModalLink } = useContext(ThemeContext);
 
   return (
     <>
@@ -118,7 +118,10 @@ const Home: FC = () => {
 
                 <div className="flex items-center h-full w-full justify-center gap-2 flex-col">
                   <button
-                    onClick={() => modals.toggle("RouteCustomerModal")}
+                    onClick={() => {
+                      setModalLink("signup");
+                      modals.toggle("RouteCustomerModal");
+                    }}
                     className="rounded-lg font-medium text-base px-12 py-3 btn-primary btn-hover-anim mb-6"
                   >
                     <span className="">Get started</span>
@@ -589,7 +592,7 @@ const Home: FC = () => {
       <Footer />
 
       <GetStartedModal />
-      <RouteCustomerModal />
+      <RouteCustomerModal link={modalLink} />
       <AiDesignWaitListModal />
     </>
   );
