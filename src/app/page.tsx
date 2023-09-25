@@ -10,6 +10,7 @@ import RouteCustomerModal from "@/components/home/modals/RouteCustomerModal";
 import AiDesignWaitListModal from "@/components/home/modals/AiDesignWaitListModal";
 import HeartIcon from "@/components/home/heartIcon";
 import Footer from "@/components/reusable/Footer";
+import EmailSubscriptionForm from "@/components/home/forms/emailSubscriptionForm";
 
 const items: {
   id: string;
@@ -553,35 +554,7 @@ const Home: FC = () => {
                   Join us today and be at the forefront of style innovation
                 </p>
 
-                <form className="cta-form mt-6">
-                  <div className="form-form-wrapper flex flex-row flex-wrap md:flex-nowrap">
-                    <div className="input-group flex md:flex-row flex-col w-full lg:w-3/4 gap-2">
-                      <input
-                        type="text"
-                        className="cta-form-input w-input flex-1 w-full lg:w-1/2"
-                        name="name"
-                        placeholder="Your full name"
-                        id="name"
-                        required
-                      />
-
-                      <input
-                        type="email"
-                        className="cta-form-input w-input flex-1 w-full lg:w-1/2"
-                        name="Email"
-                        placeholder="Your email address"
-                        id="Email"
-                        required
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="btn cta-form-button px-2 mt-3 md:mt-0 flex-1 whitespace-nowrap h-14"
-                    >
-                      Get Started
-                    </button>
-                  </div>
-                </form>
+                <EmailSubscriptionForm />
               </div>
             </div>
           </div>
