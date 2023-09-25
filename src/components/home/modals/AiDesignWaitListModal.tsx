@@ -56,7 +56,7 @@ const AiDesignWaitListModal = () => {
           <form onSubmit={form.submit}>
             <div className="">
               <div className="mb-4 flex flex-col md:flex-row gap-4">
-                <div className="">
+                <div className="w-full">
                   <label htmlFor="firstname" className={"mb-2"}>
                     Firstname
                   </label>
@@ -70,7 +70,7 @@ const AiDesignWaitListModal = () => {
                   />
                 </div>
 
-                <div className="">
+                <div className="w-full">
                   <label htmlFor="lastname" className={"mb-2"}>
                     Lastname
                   </label>
