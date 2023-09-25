@@ -42,9 +42,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "$PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t ed25519 67.207.74.72 >> ~/.ssh/known_hosts
+          ssh-keyscan -t ed25519 159.223.29.50 >> ~/.ssh/known_hosts
           eval "$(ssh-agent -s)"
 
       - name: SSH into remote server and deploy
         run: |
-          ssh root@67.207.74.72 "cd /root/sites/production/docker && chmod +x deploy-production-landing.sh && ./deploy-production-landing.sh"
+          ssh root@159.223.29.50 "cd /root/docker/production/ && chmod +x deploy-production-landing.sh && ./deploy-production-landing.sh"
