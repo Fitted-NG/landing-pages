@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Video from "../reusable/Video";
 import Button from "./Button";
 
@@ -12,10 +13,15 @@ export default function GroupOccasions() {
           </h1>
 
           <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-3 lg:gap-4 w-full md:w-2/3 lg:w-full mx-auto">
-            <a href="https://groups.fitted.ng/login">
+            <Link
+              href="https://groupsapp.fitted.ng/login"
+              className="w-full lg:w-[initial]"
+            >
               <Button type="purple">Create a group</Button>
-            </a>
-            <Button type="white">Explore aso-ebi options</Button>
+            </Link>
+            <Link href="/aso-ebi-styles" className="w-full lg:w-[initial]">
+              <Button type="white">Explore aso-ebi options</Button>
+            </Link>
           </div>
         </div>
       </div>

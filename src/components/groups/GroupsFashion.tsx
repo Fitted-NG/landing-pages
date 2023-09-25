@@ -7,6 +7,7 @@ import FirstImage from "/public/group-fashion-1.png";
 import SecondImage from "/public/group-fashion-2.png";
 import ThirdImage from "/public/group-fashion-3.png";
 import FourthImage from "/public/group-fashion-4.png";
+import Link from "next/link";
 
 const images = [FirstImage, SecondImage, ThirdImage, FourthImage];
 
@@ -134,9 +135,12 @@ export default function GroupFashion() {
           </div>
 
           <div className="w-full md:w-2/3 lg:w-full mx-auto">
-            <a href="https://groups.fitted.ng/login">
+            <Link
+              href="https://groupsapp.fitted.ng/login"
+              className="w-full lg:w-[initial]"
+            >
               <Button type="purple">Get started</Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

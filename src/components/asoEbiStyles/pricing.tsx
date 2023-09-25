@@ -27,7 +27,7 @@ export default function AsoEbiStylesPricing() {
               </div>
 
               <a
-                href="https://groups.fitted.ng/signup?group=aso-ebi&price=50000"
+                href="https://groupsapp.fitted.ng/signup?group=aso-ebi&price=50000"
                 className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
               >
                 Create Order
@@ -55,7 +55,7 @@ export default function AsoEbiStylesPricing() {
                 </ul>
               </div>
               <a
-                href="https://groups.fitted.ng/signup?group=brides-maids&price=40000"
+                href="https://groupsapp.fitted.ng/signup?group=brides-maids&price=40000"
                 className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
               >
                 Create Order
@@ -84,7 +84,7 @@ export default function AsoEbiStylesPricing() {
                 </ul>
               </div>
               <a
-                href="https://groups.fitted.ng/signup?group=familys&price=60000"
+                href="https://groupsapp.fitted.ng/signup?group=familys&price=60000"
                 className="w-full text-center bg-pink-fitted hover:bg-opacity-80 text-white py-[10px] px-[18px] text-sm rounded-[8px] mt-5"
               >
                 Create Order
@@ -184,10 +184,10 @@ export default function AsoEbiStylesPricing() {
               </div>
               <div className="">
                 <h2 className="mb-2 text-2xl font-bold">
-                  Payment Co-odination
+                  Payment Co-ordination
                 </h2>
                 <p className="text-lg">
-                  The only thing more stressful then finding the perfect tailor
+                  The only thing more stressful than finding the perfect tailor
                   is getting prompt payments from invitees. Get a personalized
                   dashboard to manage payments status.
                 </p>

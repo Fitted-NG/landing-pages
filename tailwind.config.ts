@@ -24,6 +24,7 @@ const config: Config = {
         dark: "#344054",
         "cream-fitted": "#FAF9F9",
         "blue-fitted": "#5773FF",
+        "dark-tab": "#18181A",
       },
       keyframes: {
         carousel: {
@@ -40,8 +41,8 @@ const config: Config = {
         },
       },
       animation: {
-        carousel: "carousel 40s infinite linear",
-        "brands-carousel": "brands-carousel 20s infinite linear",
+        carousel: "carousel 45s infinite linear",
+        "brands-carousel": "brands-carousel 30s infinite linear",
         "fade-in": "fade-in 2s 1 ease-in",
       },
     },

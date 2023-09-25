@@ -7,7 +7,7 @@ export default function Button({
 }: {
   type: string;
   width?: string;
-  children: string;
+  children: React.ReactNode;
 }) {
   return (
     <button

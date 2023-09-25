@@ -102,22 +102,22 @@ export default function AsoEbiStylesStep() {
                 body={
                   <div className="">
                     <p className={"mb-2"}>
-                      The next step is usually the process of finding the
-                      perfect aso-ebi materials & Fabrics.
+                      Once we are clear with your goals and fabric choices, we
+                      then guide users to the groups platform to setup their
+                      custom groups and then invite friends and family too.
                     </p>
                     <p className={"mb-2"}>
-                      This can sometimes be confusing. to help with this we
-                      provide you a{" "}
-                      <span className="font-bold">FREE Look book</span>.
+                      Upon signup from invitations, attendees will be prompted
+                      to update their measurements and before the due date.
                     </p>
                     <p className={"mb-2"}>
                       with your look book picks, we get to gain more clarity on
                       your vision.
                     </p>
                     <p>
-                      We source from a variety of fabrics gotten from our pool
-                      of fabric merchants to get the perfect design and colour
-                      for you.
+                      If any invitee does not have their recent measurements,
+                      our AI will generate a precise measurement after asking
+                      some everyday questions.
                     </p>
                   </div>
                 }
@@ -173,7 +173,7 @@ export default function AsoEbiStylesStep() {
                     </p>
                     <p className={"mb-2"}>
                       Leveraging our{" "}
-                      <a href="https://groups.fitted.ng/signup" className="">
+                      <a href="https://groupsapp.fitted.ng/signup" className="">
                         platform
                       </a>{" "}
                       you can organize communication & measurements & styles
