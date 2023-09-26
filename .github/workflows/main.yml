@@ -47,4 +47,4 @@ jobs:
 
       - name: SSH into remote server and deploy
         run: |
-          ssh root@138.197.179.82 "cd /root/docker/dev && chmod +x deploy-dev-landing.sh && ./deploy-dev-landing.sh"
+          ssh root@138.197.179.82 "cd /root/docker/dev/ && chmod +x deploy-dev-landing.sh && ./deploy-dev-landing.sh"
