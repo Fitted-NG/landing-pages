@@ -13,10 +13,6 @@ export default function TailorsHeroSection() {
         <Header />
       </div>
 
-      <div className="flex justify-end">
-        <Menu />
-      </div>
-
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white mt-36">
         <div className="text-center flex flex-col items-center justify-center">
 

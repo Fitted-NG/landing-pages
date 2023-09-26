@@ -42,73 +42,85 @@ export default function ClothingTabsSwitch() {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-center mt-5 gap-10">
-          <div className={`${currentTab === 1 ? "flex" : "hidden"} relative`}>
-            <Image
-              src={AutoMeasurement}
-              alt="manual measurement"
-              sizes="100vw"
-              style={{
-                width: "100%",
-                height: "50vh",
-              }}
-            />
+            <div className={`${currentTab === 1 ? "flex" : "hidden"} relative`}>
+                <Image
+                  src={AutoMeasurement}
+                  alt="manual measurement"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "50vh",
+                  }}
+                />
 
-            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white">
-              <h2 className="font-kotori-rose font-bold text-xl text-center">
-                Auto size Engine
-              </h2>
-              <p className="font-avenir text-base font-normal text-center">
-                Use body data like (height and weight) to predict your
-                customers’ measurements. Highly accurate and tested with over
-                15k people
-              </p>
+                <div className="banner__overlay rounded-lg"></div>
+
+                <div className="absolute inset-0 top-44 flex flex-col items-center justify-center text-white">
+                  <h2 className="w-[250px] font-kotori-rose font-bold text-xl bg-opacity-50 text-center">
+                    Auto size Engine
+                  </h2>
+                  <p className="w-[350px] font-avenir text-sm font-normal bg-opacity-50 text-center">
+                    Use body data like (height and weight) to predict your
+                    customers’ measurements. Highly accurate and tested with over
+                    15k people
+                  </p>
+                </div>
             </div>
-          </div>
 
-          <div className={`${currentTab === 1 ? "flex" : "hidden"} relative`}>
-            <Image
-              src={ManualMeasurement}
-              alt="manual measurement"
-              sizes="100vw"
-              style={{
-                width: "100%",
-                height: "50vh",
-              }}
-            />
-            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white">
-              <h2 className="font-kotori-rose font-bold text-xl text-center">
-                Manual Measurements
-              </h2>
-              <p className="font-avenir text-base font-normal text-center">
-                Let customers input their measurements manually, as measured by yourself or a tailor
-              </p>
+
+
+            <div className={`${currentTab === 1 ? "flex" : "hidden"} relative`}>
+                <Image
+                  src={ManualMeasurement}
+                  alt="manual measurement"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "50vh",
+                  }}
+                />
+
+                <div className="banner__overlay rounded-lg"></div>    
+               
+
+                <div className="absolute inset-0 top-44 flex flex-col items-center justify-center text-white">
+                  <h2 className="w-[250px] font-kotori-rose font-bold text-xl text-center">
+                    Manual Measurements
+                  </h2>
+                  <p className="w-[350px] font-avenir text-sm font-normal text-center">
+                    Let customers input their measurements manually, as measured by yourself or a tailor
+                  </p>
+                </div>
             </div>
-          </div>
 
 
 
-          <div className={`${currentTab === 2 ? "flex" : "hidden"} relative`}>
-            <Image
-              src={SizeChart}
-              alt="manual measurement"
-              sizes="100vw"
-              style={{
-                width: "100%",
-                height: "50vh",
-              }}
-            />
-            <div className="absolute lg:w-[365px] top-40 lg:right-5 text-white flex flex-col items-center justify-center ml-20">
-              <h2 className="font-kotori-rose font-bold text-xl text-center">
-                Auto size Engine
-              </h2>
-              <p className="font-avenir text-base font-normal text-center">
-                See all sizes of outfits
-              </p>
-              <div className="mt-10">
-                 <Button type="blue">Coming Soon</Button> 
-              </div>
+            <div className= {`${currentTab === 2 ? "flex" : "hidden"} relative`}>
+                <Image
+                  src={SizeChart}
+                  alt="size chart"
+                  sizes="50vw"
+                  style={{
+                    width: "100%",
+                    height: "50vh",
+                  }}
+                />
+
+                <div className="banner__overlay rounded-lg"></div>
+
+                <div className="absolute inset-0 top-44 flex flex-col items-center justify-center text-white">
+                  <h2 className="w-[250px] font-kotori-rose font-bold text-xl text-center">
+                    Auto size Engine
+                  </h2>
+                  <p className="w-[350px] font-avenir text-base font-normal text-center">
+                    See all sizes of outfits
+                  </p>
+                  <div className="mt-4">
+                    <button className="bg-[#EAFFF9] border border-[#00C48C] p-2 px-6 rounded-full text-[#00C48C]">Coming Soon</button>
+                    {/* <Button type="blue">Coming Soon</Button>  */}
+                  </div>
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
