@@ -59,7 +59,7 @@ export default function ClothingTabsSwitch() {
                   <h2 className="w-[250px] font-kotori-rose font-bold text-xl bg-opacity-50 text-center">
                     Auto size Engine
                   </h2>
-                  <p className="w-[350px] font-avenir text-sm font-normal bg-opacity-50 text-center">
+                  <p className="w-[300px] font-avenir text-sm font-normal bg-opacity-50 text-center">
                     Use body data like (height and weight) to predict your
                     customers’ measurements. Highly accurate and tested with over
                     15k people
@@ -87,7 +87,7 @@ export default function ClothingTabsSwitch() {
                   <h2 className="w-[250px] font-kotori-rose font-bold text-xl text-center">
                     Manual Measurements
                   </h2>
-                  <p className="w-[350px] font-avenir text-sm font-normal text-center">
+                  <p className="w-[300px] font-avenir text-sm font-normal text-center">
                     Let customers input their measurements manually, as measured by yourself or a tailor
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function ClothingTabsSwitch() {
                   <h2 className="w-[250px] font-kotori-rose font-bold text-xl text-center">
                     Auto size Engine
                   </h2>
-                  <p className="w-[350px] font-avenir text-base font-normal text-center">
+                  <p className="w-[300px] font-avenir text-base font-normal text-center">
                     See all sizes of outfits
                   </p>
                   <div className="mt-4">
