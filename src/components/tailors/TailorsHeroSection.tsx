@@ -17,10 +17,10 @@ export default function TailorsHeroSection() {
         <div className="text-center flex flex-col items-center justify-center">
 
 
-          {/* <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center">
             <h1 className="text-3xl text-center lg:text-5xl font-bold font-kotori-rose">
               Simplify your
-              <div className="roller lg:ml-[400px] lg:mt-10">
+              <span className="roller lg:mt-10">
                 <span id="rolltext">
                   tailoring business,
                   <br />
@@ -28,16 +28,16 @@ export default function TailorsHeroSection() {
                   <br />
                   measurements,
                   <br />
-                  <span id="spare-time">products,</span>
+                  <span>products,</span>
                 </span>
                 <br />
-              </div>
+              </span>
             </h1>
-          </div> */}
+          </div>
 
-         <h1 className="text-4xl text-center lg:text-5xl font-bold font-kotori-rose">
+         {/* <h1 className="text-4xl text-center lg:text-5xl font-bold font-kotori-rose">
             Simplify your <span>tailoring business</span> 
-          </h1>
+          </h1> */}
 
           <h1 className="text-3xl text-center lg:text-5xl font-bold font-kotori-rose mt-2">
             focus on what matters

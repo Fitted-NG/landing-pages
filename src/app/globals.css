@@ -498,12 +498,9 @@ header.scrolled .btn-secondary {
   position: relative;
   overflow: hidden;
   width: 500px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 400px;
-  margin-top: -20px;
-   */
   color: whit;
 }
 
@@ -517,19 +514,19 @@ header.scrolled .btn-secondary {
   0% {
     top: 0;
   }
-  50% {
+  25% {
     top: -90px;
     color: yellow;
   }
-  55% {
+  /* 55% {
     top: -128px;
     color: purple;
-  }
-  75% {
+  } */
+  35% {
     top: -196px;
     color: green;
   }
-  100% {
+  72.5% {
     top: -196px;
     color: green;
   }
