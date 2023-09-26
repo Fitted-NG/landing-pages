@@ -1,9 +1,9 @@
-name: Build Prod Environment
+name: Build Dev Environment
 
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   build_and_push:
@@ -25,12 +25,12 @@ jobs:
           REGISTRY: registry.digitalocean.com
           REPOSITORY: fitted
           IMAGE_NAME: landing-page
-          ENV: production
+          ENV: dev
         run: |
           docker build -t $REGISTRY/$REPOSITORY/$IMAGE_NAME/$ENV:latest .
           docker push $REGISTRY/$REPOSITORY/$IMAGE_NAME/$ENV:latest
 
-  deploy_on_production:
+  deploy_on_dev:
     runs-on: ubuntu-latest
     needs: build_and_push
     
@@ -42,9 +42,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "$PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t ed25519 159.223.29.50 >> ~/.ssh/known_hosts
+          ssh-keyscan -t ed25519 138.197.179.82 >> ~/.ssh/known_hosts
           eval "$(ssh-agent -s)"
 
       - name: SSH into remote server and deploy
         run: |
-          ssh root@159.223.29.50 "cd /root/docker/production/ && chmod +x deploy-production-landing.sh && ./deploy-production-landing.sh"
+          ssh root@138.197.179.82 "cd /root/docker/dev/ && chmod +x deploy-dev-landing.sh && ./deploy-dev-landing.sh"
