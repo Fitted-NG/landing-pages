@@ -486,6 +486,7 @@ header.scrolled .btn-secondary {
     linear-gradient(0deg, rgba(30, 30, 30, 0.8) 0%, rgba(30, 30, 30, 0.8) 100%),
     transparent -228.065px -41.191px / 126.024% 104.835% no-repeat;
 }
+
 .group-linear-background {
   background: linear-gradient(359deg, #1e1e1e 0%, rgba(30, 30, 30, 0) 100%);
 }
