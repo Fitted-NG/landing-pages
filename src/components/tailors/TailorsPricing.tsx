@@ -61,9 +61,9 @@ export default function TailorsPricing() {
               Fulfill jobs and get rated out of 5 stars
             </ListItem>
             <ListItem>Outsource production jobs to others</ListItem>
-            <ListItem>Send & receive measurements</ListItem>
-            <div className="flex flex-col items-center mt-10">
-              <button className="bg-[#EAFFF9] border border-[#00C48C] p-2 px-12 rounded-lg text-[#00C48C]">Comming Soon</button>
+            {/* <ListItem>Send & receive measurements</ListItem> */}
+            <div className="flex flex-col items-center mt-16">
+              <button className="bg-[#EAFFF9] border border-[#00C48C] p-2 px-12 rounded-lg text-[#00C48C]">Coming Soon</button>
               {/* <Button type="purple">Comming Soon</Button> */}
             </div>
           </div>
