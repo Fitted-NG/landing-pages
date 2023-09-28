@@ -16,6 +16,7 @@ export default function CarouselImage({
           fill={true}
           loading="lazy"
           className="object-cover object-center"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {imgData.data.col1.imgTag && (
           <ImageTag text={imgData.data.col1.imgTag} />
@@ -34,6 +35,7 @@ export default function CarouselImage({
               fill={true}
               loading="lazy"
               className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             {imgDatum.imgTag && <ImageTag text={imgDatum.imgTag} />}
           </div>
