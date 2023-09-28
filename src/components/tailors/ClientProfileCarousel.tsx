@@ -68,10 +68,10 @@ export default function ClientProfile() {
       >
         <div className="w-1/2 sm:px-16 px-8 mb-20 mt-12 lg:mt-52">
           <div className="text-center w-[300px] lg:w-[400px]">
-            <h2 className="w-[500px] text-base lg:text-2xl font-avenir font-normal">
+            <h2 className="lg:w-[500px] text-base lg:text-2xl font-avenir font-normal">
               “Unbelievable that someone would go this far to help organize my business. This app was a game changer! I've never been more efficient”
             </h2>
-            <div className="mt-8 ml-[120px]">
+            <div className="mt-8 lg:ml-[120px]">
               <p className="text-[#344054] font-avenir text-base font-medium">Sikiru Abaja</p>
               <p className="text-[#888F9B] font-avenir text-sm font-normal">Founder Hello World</p>
             </div>
