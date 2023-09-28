@@ -15,27 +15,21 @@ export default function TailorsHeroSection() {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white mt-36">
         <div className="text-center flex flex-col items-center justify-center">
-
-
           <div className="flex items-center justify-center">
             <h1 className="text-3xl text-center lg:text-5xl font-bold font-kotori-rose">
               Simplify your
-              <span className="roller lg:mt-10">
-                <span id="rolltext">
-                  tailoring business,
-                  <br />
-                  payments,
-                  <br />
-                  measurements,
-                  <br />
+              <span className="roll-in_wrapper">
+                <span className="roll-in">
+                  <span>tailoring business,</span>
+                  <span>payments,</span>
+                  <span>measurements,</span>
                   <span>products,</span>
                 </span>
-                <br />
               </span>
             </h1>
           </div>
 
-         {/* <h1 className="text-4xl text-center lg:text-5xl font-bold font-kotori-rose">
+          {/* <h1 className="text-4xl text-center lg:text-5xl font-bold font-kotori-rose">
             Simplify your <span>tailoring business</span> 
           </h1> */}
 
