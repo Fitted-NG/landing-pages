@@ -41,7 +41,7 @@ export default function TailorsPricing() {
             <ListItem>Send & receive measurements</ListItem>
 
             <div className="flex flex-col items-center mt-10">
-            <Link href="https://tailors.fitted.ng/signup">
+            <Link href="https://tailorsapp.fitted.ng/signup">
               <Button type="purple">Get Started</Button>
               </Link>
             </div>
@@ -63,7 +63,8 @@ export default function TailorsPricing() {
             <ListItem>Outsource production jobs to others</ListItem>
             <ListItem>Send & receive measurements</ListItem>
             <div className="flex flex-col items-center mt-10">
-              <Button type="purple">Comming Soon</Button>
+              <button className="bg-[#EAFFF9] border border-[#00C48C] p-2 px-12 rounded-lg text-[#00C48C]">Comming Soon</button>
+              {/* <Button type="purple">Comming Soon</Button> */}
             </div>
           </div>
         </div>

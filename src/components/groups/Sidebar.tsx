@@ -32,9 +32,6 @@ export default function Sidebar() {
           Shop
         </Link>
         <Link href="/tailors">Tailors</Link>
-        <Link href="https://store.fitted.ng/shop" target="_blank">
-          Customers
-        </Link>
         <Link href="https://support.fitted.ng" target="_blank">
           Support
         </Link>

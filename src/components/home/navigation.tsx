@@ -10,7 +10,7 @@ export function Navigation() {
   const [navbar, setNavbar] = useState(false);
   const [navbarLogo, setNavbarLogo] = useState(logoWhite);
   const [isOpen, setIsOpen] = useState(false);
-  const { modals } = useContext(ThemeContext);
+  const { modals, setModalLink } = useContext(ThemeContext);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -133,7 +133,10 @@ export function Navigation() {
               <div className="navbar-menu flex items-center">
                 <div className="flex items-center">
                   <button
-                    onClick={() => modals.toggle("RouteCustomerModal")}
+                    onClick={() => {
+                      setModalLink("signin");
+                      modals.toggle("RouteCustomerModal");
+                    }}
                     className="block lg:inline-block btn-primary btn-hover-anim rounded-lg py-2 px-12 transition duration-300 ease"
                   >
                     Log In
@@ -152,6 +155,7 @@ export function Navigation() {
           setIsOpen(!isOpen);
           modals.toggle("RouteCustomerModal");
         }}
+        setModalLink={setModalLink}
       />
     </>
   );
@@ -161,10 +165,12 @@ function Sidebar({
   isOpen,
   toggleSidebar,
   toggleModal,
+  setModalLink,
 }: {
   isOpen: boolean;
   toggleSidebar: () => void;
   toggleModal: () => void;
+  setModalLink: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
     <nav
@@ -189,9 +195,7 @@ function Sidebar({
           Shop
         </Link>
         <Link href="/tailors">Tailors</Link>
-        <Link href="/groups" target="_blank">
-          Groups
-        </Link>
+        <Link href="/groups">Groups</Link>
         <Link href="https://support.fitted.ng" target="_blank">
           Support
         </Link>
@@ -202,7 +206,10 @@ function Sidebar({
 
       <div className="flex flex-col justify-center items-center gap-3">
         <button
-          onClick={toggleModal}
+          onClick={() => {
+            setModalLink("signin");
+            toggleModal();
+          }}
           className="w-full text-center btn-primary btn-hover-anim rounded-lg py-3 px-[22px] transition duration-300 ease"
         >
           Log In

@@ -30,7 +30,7 @@ export default function BrandsTailors() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link href="https://tailors.fitted.ng/signup">
+          <Link href="https://tailorsapp.fitted.ng/signup">
             <Button type="blue">Join us today</Button>
           </Link>
         </div>

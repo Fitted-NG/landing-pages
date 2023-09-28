@@ -4,23 +4,22 @@ import Image from "next/image";
 import Button from "./Button";
 import { useSidebar } from "@/contexts/SidebarContext";
 import Logo from "/public/header-logo2.svg";
-
-
-
+import Link from "next/link";
 
 export default function Sidebar() {
-    const { isOpen, toggleSidebar } = useSidebar();
-
+  const { isOpen, toggleSidebar } = useSidebar();
 
   return (
     <nav
-      className={`bg-white w-full h-[610px] px-6 pt-[18px] shadow-md transition-all duration-300 fixed top-0 z-10 md:hidden ${
+      className={`bg-white w-full  h-[610px] px-6 pt-[18px] shadow-md transition-all duration-300 fixed top-0 z-10 lg:hidden ${
         isOpen ? "left-0" : "-left-full"
       }`}
     >
       <div className="flex justify-between items-center mb-8">
-        <div className="w-[110px] h-10 md:w-[175px] md:h-[62px] flex justify-center items-center">
-          <Image src={Logo} alt="logo" loading="lazy" />
+        <div className="w-[110px] h-10 md:w-[175px] md:h-[62px]  flex justify-center items-center">
+          <Link href="/">
+            <Image src={Logo} alt="logo" loading="lazy" />
+          </Link>
         </div>
 
         <div onClick={toggleSidebar} className="cursor-pointer">
@@ -29,21 +28,32 @@ export default function Sidebar() {
       </div>
 
       <div className="flex flex-col gap-7 text-[#1E1E1E] text-sm mb-28">
-        <a href="https://store.fitted.ng">Shop</a>
-        <a href="tailors.fitted.ng/signup">Tailors</a>
-        <a href="https://fitted.fashion/groups">Groups</a>
-        <a href="https://support.fitted.ng">Support</a>
-        <a href="https://blog.fitted.ng">Blog</a>
+        <Link href="https://store.fitted.ng" target="_blank">
+          Shop
+        </Link>
+        <Link href="/tailors">Tailors</Link>
+        <Link href="https://support.fitted.ng" target="_blank">
+          Support
+        </Link>
+        <Link href="https://blog.fitted.ng" target="_blank">
+          Blog
+        </Link>
       </div>
 
       <div className="flex flex-col justify-center items-center gap-3">
-        <a href="https://tailorsapp.fitted.ng/signup">
+        <Link
+          href="https://tailorsapp.fitted.ng/signup"
+          className="w-full lg:w-[initial]"
+        >
           <Button type="purple">Create account</Button>
-        </a>
-        <a href="https://tailorsapp.fitted.ng/signin">
-           <Button type="white">Sign In</Button>
-        </a>
+        </Link>
+        <Link
+          href="https://tailorsapp.fitted.ng/login"
+          className="w-full lg:w-[initial]"
+        >
+          <Button type="white">Sign In</Button>
+        </Link>
       </div>
     </nav>
-  )
+  );
 }
