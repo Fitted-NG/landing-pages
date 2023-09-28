@@ -9,7 +9,7 @@ export default function TailorsMeasurement() {
       <div className="container mx-auto flex flex-col items-center justify-center w-full gap-10">
         <div className="flex flex-col items-center">
           <h2 className="text-[#152C5B] font-kotori-rose font-bold text-center lg:max-w-[700px]  max-w-[345px] text-2xl lg:text-4xl">
-            Save time focusing what matters; measurements, seams & creativity
+            Save time focusing on what matters; measurements, seams & creativity
           </h2>
           <p className="text-[#4F4F4F] font-avenir font-light max-w-[640px] lg:text-lg text-sm text-center mt-3">
             Save time by collecting new customer’s measurements with the Fitted
