@@ -23,7 +23,7 @@ export default function Tailors () {
         <TailorsMeasurement />
         <BrandsTailors /> 
         <TailorsPricing />   
-        <ClientProfile /> 
+        {/* <ClientProfile />  */}
         <TailorsAppDownload />  
         <Footer /> 
       </main>
