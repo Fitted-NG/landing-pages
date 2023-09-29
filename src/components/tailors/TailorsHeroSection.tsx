@@ -33,7 +33,7 @@ export default function TailorsHeroSection() {
             Simplify your <span>tailoring business</span> 
           </h1> */}
 
-          <h1 className="text-3xl text-center lg:text-5xl font-bold font-kotori-rose mt-2">
+          <h1 className="text-3xl text-center lg:text-5xl font-bold font-kotori-rose lg:mt-2">
             focus on what matters
           </h1>
           <p className="text-white text-sm mt-6 w-[345px] lg:w-[593px] font-avenir">
