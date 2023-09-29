@@ -201,9 +201,9 @@ header.scrolled .btn-secondary {
   position: relative;
 }
 
-.hero-section .btn-primary:hover {
-  /* color: #fff; */
-}
+/* .hero-section .btn-primary:hover {
+  color: #fff;
+} */
 .hero-section .overlay {
   position: absolute;
   height: 100%;
@@ -331,9 +331,8 @@ header.scrolled .btn-secondary {
 /* ================= MODAL ====================*/
 .modal__box {
   position: fixed;
-  display: block;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: center;
@@ -367,7 +366,7 @@ header.scrolled .btn-secondary {
   align-self: center;
   /* box-shadow: 0 12px 25px 0 rgba(199,175,189,.25); */
   opacity: 0;
-  transform: scale(0.6);
+  transform: scale(0);
   /* transition: opacity 250ms 250ms ease, transform 300ms 250ms ease; */
   transition:
     opacity 200ms 150ms ease,
@@ -377,6 +376,7 @@ header.scrolled .btn-secondary {
 }
 
 .modal__box.show {
+  display: flex;
   pointer-events: auto;
   opacity: 1;
   transition: all 200ms ease-in-out;
