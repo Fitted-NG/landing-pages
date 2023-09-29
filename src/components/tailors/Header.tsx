@@ -53,8 +53,8 @@ export default function Header() {
             Shop
           </Link>
 
-          <Link className="hover:text-blue-fitted" href="/groups">
-            Groups
+          <Link className="hover:text-blue-fitted" href="/tailors">
+            Tailors
           </Link>
 
           <Link
