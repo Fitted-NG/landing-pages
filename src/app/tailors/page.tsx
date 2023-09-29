@@ -10,6 +10,8 @@ import ClientProfile from "@/components/tailors/ClientProfile"
 import Footer from "@/components/reusable/Footer"
 import SidebarProvider from "@/contexts/SidebarContext";
 
+
+
 export default function Tailors () {
   return (
     <SidebarProvider>
