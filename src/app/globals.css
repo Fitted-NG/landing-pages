@@ -33,6 +33,16 @@ h6 {
     scrollbar-width: none; /* Firefox */
   }
 
+  .animation-linear {
+    animation-timing-function: linear;
+  }
+
+  .animation-delay-7 {
+    opacity: 0;
+    scale: 1.2;
+    animation-delay: 7s;
+  }
+
   .brand:hover,
   .image-carousel:hover {
     animation-play-state: paused;
