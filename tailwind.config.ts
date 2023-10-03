@@ -36,6 +36,7 @@ const config: Config = {
           "100%": { transform: "translateX(-1808px)" },
         },
         "fade-in": {
+          "0%": { opacity: "0", scale: "1.2" },
           "15%": { opacity: "1", scale: "1.1" },
           "60%": { opacity: "0.8", scale: "1.0" },
           "70%": { opacity: "0", scale: "1.0" },
@@ -44,7 +45,7 @@ const config: Config = {
       animation: {
         carousel: "carousel 45s infinite linear",
         "brands-carousel": "brands-carousel 30s infinite linear",
-        "fade-in": "fade-in 14s infinite linear",
+        "fade-in": "fade-in 20s infinite linear",
       },
     },
   },

@@ -8,14 +8,14 @@ export default function HeroBackground() {
         alt={"Women celebrating fashion"}
         fill={true}
         loading="lazy"
-        className="object-cover object-center animate-fade-in animation-linear"
+        className="object-cover object-center animate-fade-in"
       />
       <Image
         src="/groups-hero-bg-image2.png"
         alt={"Men celebrating fashion"}
         fill={true}
         loading="lazy"
-        className="object-cover object-center animate-fade-in animation-linear animation-delay-7"
+        className="object-cover object-center animate-fade-in animation-delay-10"
       />
     </div>
   );
