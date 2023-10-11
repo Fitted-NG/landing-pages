@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Header from "@/components/groups/Header";
 import Sidebar from "@/components/groups/Sidebar";
 import GroupsHeroSection from "@/components/groups/hero";
@@ -9,6 +10,10 @@ import Brands from "@/components/groups/Brands";
 import SendMeasurements from "@/components/groups/SendMeasurements";
 import Footer from "@/components/reusable/Footer";
 import SidebarProvider from "@/contexts/SidebarContext";
+
+export const metadata: Metadata = {
+  title: "Fitted Groups",
+};
 
 export default function Groups() {
   return (
