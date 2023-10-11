@@ -33,6 +33,11 @@ h6 {
     scrollbar-width: none; /* Firefox */
   }
 
+  .animation-delay-10 {
+    opacity: 0;
+    animation-delay: 10s;
+  }
+
   .brand:hover,
   .image-carousel:hover {
     animation-play-state: paused;
