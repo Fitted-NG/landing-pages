@@ -35,7 +35,7 @@ export default function GroupFashion() {
       className="mt-16 lg:mt-32 bg-cream-fitted w-full"
       id="group-fashion"
     >
-      <div className="py-16 container mx-auto px-6 md:px-12">
+      <div className="pt-24 pb-16 container mx-auto px-6 md:px-12">
         <div className="hidden lg:block mb-16">
           <h1 className="text-center text-5xl font-bold mb-[22px]">
             Take the headache out of group fashion
