@@ -464,7 +464,7 @@ const Home: FC = () => {
                 <div className="mt-5">
                   <Link
                     target="_blank"
-                    href="https://groupsapp.fitted.ng/signup"
+                    href="https://groups.fitted.fashion/signup"
                     className="btn-primary px-6 py-3  text-sm rounded-lg"
                   >
                     Start now

@@ -102,7 +102,7 @@ export default function ManageDetails() {
 
         <div className="w-full md:w-2/3 mx-auto flex md:justify-center items-center">
           <Link
-            href="https://groupsapp.fitted.ng/login"
+            href="https://groups.fitted.fashion/login"
             className="w-full md:w-[initial]"
           >
             <Button type="purple">Create invite to group</Button>

@@ -71,8 +71,8 @@ const RouteCustomerModal = ({ link }: { link: string }) => {
           <Link
             href={
               link === "signup"
-                ? "https://groupsapp.fitted.ng/signup"
-                : "https://groupsapp.fitted.ng/login"
+                ? "https://groups.fitted.fashion/signup"
+                : "https://groups.fitted.fashion/login"
             }
             target="_blank"
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-full h-72 overflow-hidden get_started_modal_btns`}

@@ -14,7 +14,7 @@ export default function GroupOccasions() {
 
           <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-3 lg:gap-4 w-full md:w-2/3 lg:w-full mx-auto">
             <Link
-              href="https://groupsapp.fitted.ng/login"
+              href="https://groups.fitted.fashion/login"
               className="w-full lg:w-[initial]"
             >
               <Button type="purple">Create a group</Button>
