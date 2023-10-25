@@ -42,13 +42,13 @@ export default function Sidebar() {
 
       <div className="flex flex-col justify-center items-center gap-3">
         <Link
-          href="https://groupsapp.fitted.ng/signup"
+          href="https://groups.fitted.fashion/signup"
           className="w-full lg:w-[initial]"
         >
           <Button type="purple">Create account</Button>
         </Link>
         <Link
-          href="https://groupsapp.fitted.ng/login"
+          href="https://groups.fitted.fashion/login"
           className="w-full lg:w-[initial]"
         >
           <Button type="white">Sign In</Button>

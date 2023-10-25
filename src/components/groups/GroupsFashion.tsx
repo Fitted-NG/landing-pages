@@ -136,7 +136,7 @@ export default function GroupFashion() {
 
           <div className="w-full md:w-2/3 lg:w-full mx-auto">
             <Link
-              href="https://groupsapp.fitted.ng/login"
+              href="https://groups.fitted.fashion/login"
               className="w-full lg:w-[initial]"
             >
               <Button type="purple">Get started</Button>
