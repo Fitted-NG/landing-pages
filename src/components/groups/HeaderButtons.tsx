@@ -8,7 +8,7 @@ export default function HeaderButtons({
   return (
     <div className="justify-center items-center md:gap-3 lg:gap-5 hidden lg:flex">
       <Link
-        href="https://groupsapp.fitted.ng/login"
+        href="https://groups.fitted.fashion/login"
         className="w-full lg:w-[initial]"
       >
         <button
@@ -20,7 +20,7 @@ export default function HeaderButtons({
         </button>
       </Link>
       <Link
-        href="https://groupsapp.fitted.ng/signup"
+        href="https://groups.fitted.fashion/signup"
         className="w-full lg:w-[initial]"
       >
         <button className="py-2.5 px-4 md:px-[18px] bg-pink-fitted text-white rounded-lg">

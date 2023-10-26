@@ -24,13 +24,13 @@ export default function SendMeasurements() {
 
               <div className="flex flex-col gap-3 justify-center items-center lg:items-start w-full md:w-2/3 lg:w-full mx-auto">
                 <Link
-                  href="https://groupsapp.fitted.ng/login"
+                  href="https://groups.fitted.fashion/login"
                   className="w-full lg:w-[initial]"
                 >
                   <Button type="purple">Send Measurement</Button>
                 </Link>
                 <Link
-                  href="https://groupsapp.fitted.ng/login"
+                  href="https://groups.fitted.fashion/login"
                   className="w-full lg:w-[initial]"
                 >
                   <Button type="white">Try Measurements AI</Button>
@@ -81,7 +81,7 @@ export default function SendMeasurements() {
 
           <div className="text-center w-3/4 md:w-2/3 lg:w-full mx-auto">
             <Link
-              href="https://groupsapp.fitted.ng/login"
+              href="https://groups.fitted.fashion/login"
               className="w-full lg:w-[initial]"
             >
               <Button type="white">Get started</Button>

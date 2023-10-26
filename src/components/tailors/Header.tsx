@@ -12,27 +12,22 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [navbarLogo, setNavbarLogo] = useState(LogoLight);
 
-
   const scrollEventHandler = () => {
     if (window.scrollY >= 86) {
-      setNavbar(true)
+      setNavbar(true);
     } else {
-      setNavbar(false)
+      setNavbar(false);
     }
-  }
-
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollEventHandler);
-
+    window.addEventListener("scroll", scrollEventHandler);
 
     return () => {
-      window.removeEventListener('scroll', scrollEventHandler);
-    }
+      window.removeEventListener("scroll", scrollEventHandler);
+    };
+  }, []);
 
-  }, [])
-
- 
   return (
     <header
       className={`fixed w-full z-10 top-0 left-0 right-0 ${
@@ -76,12 +71,13 @@ export default function Header() {
 
         <div className="w-[110px] h-10 md:w-[160px] xl:relative xl:-left-10 flex justify-center items-center">
           <Link href="/">
-            <Image src={navbar ? LogoDark : LogoLight} alt="logo" loading="lazy" />
+            <Image
+              src={navbar ? LogoDark : LogoLight}
+              alt="logo"
+              loading="lazy"
+            />
           </Link>
         </div>
-        
-
-
 
         <Menu navBarScrollStatus={navbar} />
 
@@ -90,4 +86,3 @@ export default function Header() {
     </header>
   );
 }
-
