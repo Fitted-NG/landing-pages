@@ -42,13 +42,13 @@ export default function Sidebar() {
 
       <div className="flex flex-col justify-center items-center gap-3">
         <Link
-          href="https://tailorsapp.fitted.ng/signup"
+          href="https://tailors.fitted.fashion/signup"
           className="w-full lg:w-[initial]"
         >
           <Button type="purple">Create account</Button>
         </Link>
         <Link
-          href="https://tailorsapp.fitted.ng/login"
+          href="https://tailors.fitted.fashion/login"
           className="w-full lg:w-[initial]"
         >
           <Button type="white">Sign In</Button>

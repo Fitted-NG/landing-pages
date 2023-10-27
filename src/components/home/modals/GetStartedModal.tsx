@@ -76,7 +76,7 @@ const GetStartedModal = () => {
           </Link>
 
           <Link
-            href="https://tailorsapp.fitted.ng/signin"
+            href="https://tailors.fitted.fashion/signin"
             target="_blank"
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-3/4 md:w-full h-72 overflow-hidden get_started_modal_btns`}
           >

@@ -5,13 +5,17 @@ import Link from "next/link";
 
 export default function BrandsTailors() {
   return (
-    <section className='bg-white sm:px-12 px-3 sm:py-24 py-12'>
-      <div className='max-w-[1440px] mx-auto'>
-        <div className='flex flex-col items-center justify-center text-center'>
-          <h2 className='max-w-[345px] lg:max-w-[949px] font-bold text-lg lg:text-3xl font-kotori-rose'>Exceptional tailor brands run their businesses on fitted</h2>
-          <p className='max-w-[345px] mt-2 font-avenir font-normal text-sm text-[#344054]'>We’re used by some of the best in class fashion designers and tailor brands</p>
+    <section className="bg-white sm:px-12 px-3 sm:py-24 py-12">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="flex flex-col items-center justify-center text-center">
+          <h2 className="max-w-[345px] lg:max-w-[949px] font-bold text-lg lg:text-3xl font-kotori-rose">
+            Exceptional tailor brands run their businesses on fitted
+          </h2>
+          <p className="max-w-[345px] mt-2 font-avenir font-normal text-sm text-[#344054]">
+            We’re used by some of the best in class fashion designers and tailor
+            brands
+          </p>
         </div>
-
 
         <div className="overflow-x-scroll no-scrollbar relative cursor-pointer mb-10">
           <div className="flex gap-24 animate-brands-carousel brand">
@@ -30,12 +34,11 @@ export default function BrandsTailors() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link href="https://tailorsapp.fitted.ng/signup">
+          <Link href="https://tailors.fitted.fashion/signup">
             <Button type="blue">Join us today</Button>
           </Link>
         </div>
-
       </div>
     </section>
-  )
+  );
 }

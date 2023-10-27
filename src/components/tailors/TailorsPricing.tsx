@@ -1,10 +1,9 @@
 import Image from "next/image";
-import FirstPricingIcon from "/public/pricing-icon-one.png"
-import SecondPricingIcon from "/public/pricing-icon-two.png"
+import FirstPricingIcon from "/public/pricing-icon-one.png";
+import SecondPricingIcon from "/public/pricing-icon-two.png";
 import ListItem from "./ListItem";
 import Button from "./Button";
 import Link from "next/link";
-
 
 export default function TailorsPricing() {
   return (
@@ -28,9 +27,15 @@ export default function TailorsPricing() {
           <div className="bg-white rounded-lg shadow-lg w-[320px] lg:w-[320px] p-4 pt-10 pb-10">
             <div className="flex flex-col items-center text-center gap-3">
               <Image src={FirstPricingIcon} alt="first pricing icon" />
-              <p className="text-[#5773FF] text-lg font-normal font-avenir">TAILOR APP</p>
-              <h2 className="text-[#101828] text-3xl font-normal font-kotori-rose">Free Forever</h2>
-              <p className="text-[#667085] font-avenir font-normal text-base mb-10">You’ll never pay!</p>
+              <p className="text-[#5773FF] text-lg font-normal font-avenir">
+                TAILOR APP
+              </p>
+              <h2 className="text-[#101828] text-3xl font-normal font-kotori-rose">
+                Free Forever
+              </h2>
+              <p className="text-[#667085] font-avenir font-normal text-base mb-10">
+                You’ll never pay!
+              </p>
             </div>
             <ListItem>Access to all basic features</ListItem>
             <ListItem>Store customer measurements</ListItem>
@@ -41,29 +46,39 @@ export default function TailorsPricing() {
             <ListItem>Send & receive measurements</ListItem>
 
             <div className="flex flex-col items-center mt-10">
-            <Link href="https://tailorsapp.fitted.ng/signup">
-              <Button type="purple">Get Started</Button>
+              <Link href="https://tailors.fitted.fashion/signup">
+                <Button type="purple">Get Started</Button>
               </Link>
             </div>
           </div>
 
-
           <div className="bg-white rounded-lg shadow-lg w-[320px] lg:w-[320px] p-4 pt-10 pb-10">
             <div className="flex flex-col items-center text-center gap-3">
               <Image src={SecondPricingIcon} alt="first pricing icon" />
-              <p className="text-[#5773FF] text-lg font-normal font-avenir">TAILOR APP + JOBS</p>
-              <h2 className="text-[#101828] text-3xl font-normal font-kotori-rose">₦1,000/<span className="text-lg font-avenir text-[#667085]">month</span></h2>
-              <p className="text-[#667085] font-avenir font-normal text-base mb-10">Billed annually.</p>
+              <p className="text-[#5773FF] text-lg font-normal font-avenir">
+                TAILOR APP + JOBS
+              </p>
+              <h2 className="text-[#101828] text-3xl font-normal font-kotori-rose">
+                ₦1,000/
+                <span className="text-lg font-avenir text-[#667085]">
+                  month
+                </span>
+              </h2>
+              <p className="text-[#667085] font-avenir font-normal text-base mb-10">
+                Billed annually.
+              </p>
             </div>
-            <ListItem>Get unlimited jobs ranging from N1 to over N1 million</ListItem>
-            <ListItem>Negotiate and accept jobs</ListItem>
             <ListItem>
-              Fulfill jobs and get rated out of 5 stars
+              Get unlimited jobs ranging from N1 to over N1 million
             </ListItem>
+            <ListItem>Negotiate and accept jobs</ListItem>
+            <ListItem>Fulfill jobs and get rated out of 5 stars</ListItem>
             <ListItem>Outsource production jobs to others</ListItem>
             {/* <ListItem>Send & receive measurements</ListItem> */}
             <div className="flex flex-col items-center mt-16">
-              <button className="bg-[#EAFFF9] border border-[#00C48C] p-2 px-12 rounded-lg text-[#00C48C]">Coming Soon</button>
+              <button className="bg-[#EAFFF9] border border-[#00C48C] p-2 px-12 rounded-lg text-[#00C48C]">
+                Coming Soon
+              </button>
               {/* <Button type="purple">Comming Soon</Button> */}
             </div>
           </div>

@@ -103,8 +103,8 @@ const RouteCustomerModal = ({ link }: { link: string }) => {
           <Link
             href={
               link === "signup"
-                ? "https://tailorsapp.fitted.ng/signup"
-                : "https://tailorsapp.fitted.ng/signin"
+                ? "https://tailors.fitted.fashion/signup"
+                : "https://tailors.fitted.fashion/signin"
             }
             target="_blank"
             className={`block relative rounded-lg border transition duration-150 ease-in-out w-full h-72 overflow-hidden get_started_modal_btns`}
