@@ -9,6 +9,13 @@ import TailorsAppDownload from "@/components/tailors/TailorsAppDownload"
 import ClientProfile from "@/components/tailors/ClientProfile"
 import Footer from "@/components/reusable/Footer"
 import SidebarProvider from "@/contexts/SidebarContext";
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Fitted Tailors",
+  description: "Get excellent aso ebi for any event or group",
+};
 
 
 
