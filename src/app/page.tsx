@@ -551,31 +551,133 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className="padded-section form__block_section px-2 bg-[#000F15]">
-        <div className=" px-3">
-          <div className="container mx-auto px-2 md:px-6 max-w-5xl w-full pt-12 md:pt-20  pb-28 mb-6 text-white">
-            <div className="flex items-center justify-center text-center gap-3 flex-col">
-              <h2 className="text-[48px] lg:text-[68px] leading-[82.88px] font-bold font-kotori-rose">
-                Your fashion crystal ball (text to design ai){" "}
-              </h2>
+      <section className="padded-section bg-[#F8F8F8]">
+        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full">
+          <h2 className="text-[36px] font-bold text-center">Press releases</h2>
 
-              <div className="max-w-3xl mx-auto">
-                <p className="text-lg lg:text-xl leading-[1.5]">
-                  Type your style desire and witness our AI conjure up
-                  customized designs in seconds.
-                </p>
-                <div className="flex items-center justify-center mt-8 pt-3">
-                  <button
-                    onClick={() => modals.toggle("AiDesignWaitListModal")}
-                    className="text-white btn-hover-anim btn-primary px-12 py-4 text-sm rounded-lg"
-                    aria-disabled="true"
-                  >
-                    Generate your style
-                  </button>
+          <div className="">
+            <div className="grid lg:grid-cols-3 gap-8">
+              <div className="flex flex-col gap-8">
+                <div className="relative min-h-[200px]">
+                  <Image src={"/yasr.png"} alt={"YASR"} fill />
+                </div>
+
+                <div className="">
+                  <div className="text-[#B7076B] text-sm font-medium">
+                    YASR • 19 Jan 2022
+                  </div>
+                  <div className="flex justify-between items-center font-bold text-2xl text-[#101828] py-3">
+                    <h2 className="">Yale Startup of the year 2023</h2>
+                    <span>
+                      <svg
+                        width="24"
+                        height="28"
+                        viewBox="0 0 24 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21L17 11M17 11H7M17 11V21"
+                          stroke="#101828"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <p className="text-[#667085] text-base">
+                    Awarded top 30 startups in Africa
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-8">
+                <div className="relative min-h-[200px]">
+                  <Image
+                    src={"/tailor-job-tech.png"}
+                    alt={"tailor job tech"}
+                    fill
+                  />
+                </div>
+
+                <div className="">
+                  <div className="text-[#B7076B] text-sm font-medium">
+                    Jobtech Alliance • 21 Sep 2023
+                  </div>
+                  <div className="flex justify-between items-center font-bold text-2xl text-[#101828] py-3">
+                    <h2 className="">Why Jobtech invested in Fitted</h2>
+                    <span>
+                      <svg
+                        width="24"
+                        height="28"
+                        viewBox="0 0 24 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21L17 11M17 11H7M17 11V21"
+                          stroke="#101828"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <p className="text-[#667085] text-base">
+                    Custom clothing is common in many countries in Africa and
+                    Asia.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-8">
+                <div className="relative min-h-[200px]">
+                  <Image
+                    src={"/ml-measurement.png"}
+                    alt={"ml measurement"}
+                    fill
+                  />
+                </div>
+
+                <div className="">
+                  <div className="text-[#B7076B] text-sm font-medium">
+                    Disrupt Africa • 16 May 2023
+                  </div>
+                  <div className="flex justify-between items-center font-bold text-2xl text-[#101828] py-3">
+                    <h2 className="">Use of ML in measurement</h2>
+                    <span>
+                      <svg
+                        width="24"
+                        height="28"
+                        viewBox="0 0 24 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21L17 11M17 11H7M17 11V21"
+                          stroke="#101828"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <p className="text-[#667085] text-base">
+                    Nigerian startup fitted has developed a digital platform
+                    that uses machine learning.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="padded-section form__block_section px-2 bg-[#000F15]">
+        <div className=" px-3">
           <div className="relative overflow-hidden container mx-auto px-4 md:px-6 max-w-5xl w-full bg-[#2F2C2E] py-12 text-white rounded-3xl">
             <div className="absolute rounded-full w-[301px] h-[301px] left-[-74px] top-[-115px] linear-pattern"></div>
             <div className="absolute rounded-full w-[301px] h-[301px] left-[909px] top-[81px] linear-pattern"></div>
