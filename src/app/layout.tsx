@@ -6,7 +6,8 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Fitted Fashion",
-  description: "Get excellent aso ebi for any event or group",
+  description:
+    "Step into the digital era of fashion. Exceptional tailor-made outfits, crafted exclusively for customers with AI and blockchain",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
