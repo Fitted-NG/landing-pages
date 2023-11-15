@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { avenir, kotoriRose } from "@/fonts";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Fitted Fashion",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${avenir.className} ${kotoriRose.variable} ${avenir.variable}`}
       >
+        <GoogleAnalytics />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
