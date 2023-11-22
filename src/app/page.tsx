@@ -277,7 +277,7 @@ const Home: FC = () => {
                     >
                       <div className="mb-4">
                         <h3 className="text-[36px] leading-[44px] font-bold font-kotori-rose">
-                          Empowering all fashion brand
+                          Empowering all fashion brands
                         </h3>
                       </div>
                       <div className="text-[20px] leading-[30px]">
