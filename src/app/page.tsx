@@ -147,6 +147,74 @@ const Home: FC = () => {
         <div className="overlay"></div>
       </div>
 
+      <section className="unpadded-section bg-white">
+        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full rounded-2xl">
+          <div className="h-[550px] w-full rounded-lg relative overflow-hidden">
+            <Image
+              src="/group_of_tailors.png"
+              fill
+              alt="several tailors"
+              className="object-left-top lg:object-top object-cover"
+              loading={"lazy"}
+            />
+            <div className="banner__overlay2 rounded-lg"></div>
+
+            <div className="text-white text-center flex justify-center items-center h-full py-6 px-3">
+              <div className="flex items-center justify-end h-full flex-col py-5 z-10">
+                <h3 className="text-[32px] lg:text-[52px] leading-[1.4] font-kotori-rose font-bold">
+                  Powered by tailors on fitted app
+                </h3>
+                <p className={"text-lg lg:text-xl"}>
+                  Thousands of tailors spanning 13 countries. Its like Uber for
+                  tailors
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full">
+          <div className="grid grid-cols-2 lg:grid-cols-3 py-4 my-4  gap-x-6 gap-y-8">
+            {items.map((item) => (
+              <div className="card rounded-lg" key={item.id}>
+                <Link href={item.link ? item.link : `/shop/item/${item.id}`}>
+                  <div className="card-img h-72 w-full relative overflow-hidden bg-[#BBBEBF] rounded-lg">
+                    <Image
+                      src={item.image}
+                      fill
+                      alt={item.title}
+                      className="rounded-lg object-top"
+                      loading={"lazy"}
+                    />
+                  </div>
+                </Link>
+                <div className="card-body py-4">
+                  <div className="flex items-center justify-between gap-1">
+                    <Link
+                      href={item.link ? item.link : `/shop/item/${item.id}`}
+                    >
+                      <h3>{item.title}</h3>
+                    </Link>
+
+                    <span>
+                      <HeartIcon />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-8 pt-3">
+            <Link
+              className="text-white btn-hover-anim btn-primary px-11 py-3 text-sm rounded-lg"
+              href="https://store.fitted.ng/"
+            >
+              Go to Store
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div className="bg-[#000F15] text-white pt-[131px] pb-5">
           <div className="container mx-auto px-3 lg:px-6 max-w-5xl lg:max-w-6xl w-full ">
@@ -269,80 +337,55 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className="relative bg-white h-[750px]">
-        <Image
-          src={"/custom_clothing_image.png"}
-          alt={"custom clothing, man and woman"}
-          fill
-          className={"object-cover object-top"}
-          loading={"lazy"}
-        />
-        <div className="banner__overlay rounded-lg"></div>
-
-        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full rounded-lg h-full">
-          <div className="text-white text-center flex justify-start items-start h-full py-6 max-w-xl lg:max-w-5xl">
-            <div className="flex items-center justify-end h-full flex-col py-5 z-10">
-              <h3 className="text-[32px] lg:text-[60px] leading-[1.2] text-left font-bold font-kotori-rose">
-                Stitching the physical and digital world with fashion
-              </h3>
+      <section className="bg-white">
+        <div className="">
+          <div className="py-24 flex flex-col gap-10">
+            <div className="">
+              <h1 className="text-center text-[36px] font-bold">
+                Our numbers thus far
+              </h1>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="padded-section bg-white">
-        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-20 lg:gap-x-40 gap-y-12">
-            <div className=" py-4 ">
-              <div
-                className="text-[#1E1E1E]"
-                style={{ maxWidth: "500px", width: "100%" }}
-              >
-                <div className="mb-4">
-                  <h3 className="text-[36px] font-bold font-kotori-rose">
-                    Store digital NFTs of your outfits in wallets
-                  </h3>
-                </div>
-                <div className="mb-3 pb-2 text-xl leading-[1.5]">
-                  <p className="">
-                    Secure and manage your products, ensuring peace of mind and
-                    easy access whenever you need them.
-                  </p>
-                </div>
-                <div className="mt-5">
-                  <button
-                    onClick={toggle}
-                    className="btn-primary px-12 py-4 h-14  text-sm rounded-lg"
-                  >
-                    Get started
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className=" py-4 ">
-              <div
-                className="text-[#1E1E1E]"
-                style={{ maxWidth: "500px", width: "100%" }}
-              >
-                <div className="mb-4">
-                  <h3 className="text-[36px] font-bold font-kotori-rose">
-                    Integrate and order gaming outfits
-                  </h3>
-                </div>
-                <div className="mb-3 pb-2 text-xl leading-[1.5]">
-                  <p>
-                    Integrate to your favourite gaming platforms to get IRL
-                    (In-Real-Life) versions of your favourite outfits
-                  </p>
-                </div>
-                <div className="mt-5">
-                  <button
-                    type={"button"}
-                    className="btn coming-soon px-6 py-3 rounded-full text-sm opacity-60 border border-[#E1FDFF] bg-[#E1FDFF] text-[#057B83]"
-                  >
-                    {/* <button className="text-[#DD7D37] px-12 py-2 text-sm  border border-[#DD7D37] rounded-full opacity-60 " aria-disabled="true"></button> */}
-                    Coming Soon..
-                  </button>
+            <div className="py-32 relative">
+              <Image
+                src={"/numbers-bg.png"}
+                alt={"background"}
+                fill
+                className={"object-cover object-center"}
+              />
+
+              <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full">
+                <div className="grid gap-4 lg:grid-cols-4 md:grid-cols-2">
+                  <div className="flex flex-col gap5 py-8 px-4 text-center text-white font-avenir bg-white bg-opacity-30 border-white border-opacity-50 border rounded-md backdrop-blur-md ">
+                    <h3 className="text-5xl font-bold font-avenir">5K+</h3>
+                    <h4 className="text-lg">Tailors</h4>
+                    <p className="text-base">
+                      We’ve helped onboard these tailors in 13 countries.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap5 py-8 px-4 text-center text-white font-avenir bg-white bg-opacity-30 border-white border-opacity-50 border rounded-md backdrop-blur-md ">
+                    <h3 className="text-5xl font-bold font-avenir">15K+</h3>
+                    <h4 className="text-lg">Customers</h4>
+                    <p className="text-base">
+                      Our customer base spreads over 9 countries and counting.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap5 py-8 px-4 text-center text-white font-avenir bg-white bg-opacity-30 border-white border-opacity-50 border rounded-md backdrop-blur-md ">
+                    <h3 className="text-5xl font-bold font-avenir">200+</h3>
+                    <h4 className="text-lg">Dispatch trips</h4>
+                    <p className="text-base">
+                      Sending out all outfits made with love weekly.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap5 py-8 px-4 text-center text-white font-avenir bg-white bg-opacity-30 border-white border-opacity-50 border rounded-md backdrop-blur-md ">
+                    <h3 className="text-5xl font-bold font-avenir">
+                      &gt;100K+
+                    </h3>
+                    <h4 className="text-lg">Yards of fabric</h4>
+                    <p className="text-base">
+                      Used monthly to craft out breathtaking styles monthly.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -350,70 +393,69 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className="unpadded-section bg-white">
-        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full rounded-2xl">
-          <div className="h-[550px] w-full rounded-lg relative overflow-hidden">
-            <Image
-              src="/group_of_tailors.png"
-              fill
-              alt="several tailors"
-              className="object-left-top lg:object-top object-cover"
-              loading={"lazy"}
-            />
-            <div className="banner__overlay2 rounded-lg"></div>
-
-            <div className="text-white text-center flex justify-center items-center h-full py-6 px-3">
-              <div className="flex items-center justify-end h-full flex-col py-5 z-10">
-                <h3 className="text-[32px] lg:text-[52px] leading-[1.4] font-kotori-rose font-bold">
-                  Powered by tailors on fitted app
+      <section className="">
+        <div className="">
+          <div className="py-16 flex items-center gap-10 lg:gap-14">
+            <div className="w-1/2 min-h-[765px] relative">
+              <Image
+                src={"/aso-ebi-group.png"}
+                alt={"aso ebi group"}
+                fill={true}
+                className={
+                  "w-full h-full object-cover object-center rounded-r-lg"
+                }
+              />
+            </div>
+            <div className="pr-3 md:pr-6">
+              <div className="max-w-lg pr-3 md:pr-6">
+                <h3 className="text-[36px] font-bold font-kotori-rose">
+                  Be able to get excellent Aso Ebi for any event or group
                 </h3>
-                <p className={"text-lg lg:text-xl"}>
-                  Thousands of tailors spanning 13 countries. Its like Uber for
-                  tailors
-                </p>
+                <div className="text-xl leading-[1.5]">
+                  <p className="mb-3">
+                    Capture your unique body dimensions with our ai powered
+                    measurement system, ensuring a perfect fit, tailored
+                    exclusively to you. Say farewell to tedious measuring tapes
+                    and welcome the era of hassle-free, AI guided measurements,
+                    that guarantee an impeccable and customized experience.
+                  </p>
+                  <a href="/groups" className="text-lg text-pink-fitted">
+                    Explore Groups for customers &gt;&gt;
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full">
-          <div className="grid grid-cols-2 lg:grid-cols-3 py-4 my-4  gap-x-6 gap-y-8">
-            {items.map((item) => (
-              <div className="card rounded-lg" key={item.id}>
-                <Link href={item.link ? item.link : `/shop/item/${item.id}`}>
-                  <div className="card-img h-72 w-full relative overflow-hidden bg-[#BBBEBF] rounded-lg">
-                    <Image
-                      src={item.image}
-                      fill
-                      alt={item.title}
-                      className="rounded-lg object-top"
-                      loading={"lazy"}
-                    />
-                  </div>
-                </Link>
-                <div className="card-body py-4">
-                  <div className="flex items-center justify-between gap-1">
-                    <Link
-                      href={item.link ? item.link : `/shop/item/${item.id}`}
-                    >
-                      <h3>{item.title}</h3>
-                    </Link>
-
-                    <span>
-                      <HeartIcon />
-                    </span>
-                  </div>
+          <div className="py-16 flex items-center gap-10 lg:gap-14">
+            <div className="ml-auto pl-3 md:pl-6">
+              <div className="max-w-lg pl-3 md:pl-6">
+                <h3 className="text-[36px] font-bold font-kotori-rose">
+                  Delight customers with seamless tailoring services
+                </h3>
+                <div className="text-xl leading-[1.5]">
+                  <p className="mb-3">
+                    Capture your unique body dimensions with our ai powered
+                    measurement system, ensuring a perfect fit, tailored
+                    exclusively to you. Say farewell to tedious measuring tapes
+                    and welcome the era of hassle-free, AI guided measurements,
+                    that guarantee an impeccable and customized experience.
+                  </p>
+                  <a href="/tailors" className="text-lg text-pink-fitted">
+                    Explore Tailors &gt;&gt;
+                  </a>
                 </div>
               </div>
-            ))}
-          </div>
-          <div className="flex items-center justify-center mt-8 pt-3">
-            <Link
-              className="text-white btn-hover-anim btn-primary px-11 py-3 text-sm rounded-lg"
-              href="https://store.fitted.ng/"
-            >
-              Go to Store
-            </Link>
+            </div>
+            <div className="w-1/2 min-h-[765px] relative">
+              <Image
+                src={"/tailoring-services.png"}
+                alt={"Delight customers with seamless tailoring services"}
+                fill={true}
+                className={
+                  "w-full h-full object-cover object-center rounded-l-lg"
+                }
+              />
+            </div>
           </div>
         </div>
       </section>
