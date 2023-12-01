@@ -9,7 +9,7 @@ export default function TailorsPricing() {
   return (
     <section className="bg-[#FBFBFF] sm:px-16 px-8 sm:py-24 py-12">
       <div className="container max-auto flex flex-col lg:flex-row items-start gap-20 lg:gap-10">
-        <div className="w-[345px] lg:w-[448px]">
+        <div className="w-full max-w-[345px] lg:max-w-[448px]">
           <p className="text-sm text-[#5773FF] font-avenir">
             Lets talk business
           </p>
@@ -24,7 +24,7 @@ export default function TailorsPricing() {
         </div>
 
         <div className="flex max-lg:flex-col gap-20 lg:gap-10">
-          <div className="bg-white rounded-lg shadow-lg w-[320px] lg:w-[320px] p-4 pt-10 pb-10">
+          <div className="bg-white rounded-lg shadow-lg w-full md:w-[320px] p-4 pt-10 pb-10">
             <div className="flex flex-col items-center text-center gap-3">
               <Image src={FirstPricingIcon} alt="first pricing icon" />
               <p className="text-[#5773FF] text-lg font-normal font-avenir">
@@ -47,12 +47,14 @@ export default function TailorsPricing() {
 
             <div className="flex flex-col items-center mt-10">
               <Link href="https://tailors.fitted.fashion/signup">
-                <Button type="purple">Get Started</Button>
+                <button className=" bg-blue-fitted text-white p-2 px-12 rounded-lg">
+                  Get Started
+                </button>
               </Link>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg w-[320px] lg:w-[320px] p-4 pt-10 pb-10">
+          <div className="bg-white rounded-lg shadow-lg w-full md:w-[320px] p-4 pt-10 pb-10">
             <div className="flex flex-col items-center text-center gap-3">
               <Image src={SecondPricingIcon} alt="first pricing icon" />
               <p className="text-[#5773FF] text-lg font-normal font-avenir">
