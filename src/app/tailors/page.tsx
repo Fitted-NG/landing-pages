@@ -1,39 +1,36 @@
-import Sidebar from "@/components/tailors/Sidebar"
-import TailorsHeroSection from "@/components/tailors/TailorsHeroSection"
-import ClothingTabs from "@/components/tailors/ClothingTabs"
-import FashionBrand from "@/components/tailors/FashionBrand"
-import BrandsTailors from "@/components/tailors/BrandsTailors"
-import TailorsPricing from "@/components/tailors/TailorsPricing"
-import TailorsMeasurement from "@/components/tailors/TailorsMeasurement"
-import TailorsAppDownload from "@/components/tailors/TailorsAppDownload"
-import ClientProfile from "@/components/tailors/ClientProfile"
-import Footer from "@/components/reusable/Footer"
+import Sidebar from "@/components/tailors/Sidebar";
+import TailorsHeroSection from "@/components/tailors/TailorsHeroSection";
+import ClothingTabs from "@/components/tailors/ClothingTabs";
+import FashionBrand from "@/components/tailors/FashionBrand";
+import BrandsTailors from "@/components/tailors/BrandsTailors";
+import TailorsPricing from "@/components/tailors/TailorsPricing";
+import TailorsMeasurement from "@/components/tailors/TailorsMeasurement";
+import TailorsAppDownload from "@/components/tailors/TailorsAppDownload";
+import ClientProfile from "@/components/tailors/ClientProfile";
+import Footer from "@/components/reusable/Footer";
 import SidebarProvider from "@/contexts/SidebarContext";
 import type { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "Fitted Tailors",
   description: "Get excellent aso ebi for any event or group",
 };
 
-
-
-export default function Tailors () {
+export default function Tailors() {
   return (
     <SidebarProvider>
       <main>
         <Sidebar />
-        <TailorsHeroSection />   
-        <ClothingTabs /> 
-        <FashionBrand /> 
+        <TailorsHeroSection />
+        <ClothingTabs />
+        <FashionBrand />
         <TailorsMeasurement />
-        <BrandsTailors /> 
-        <TailorsPricing />   
+        <BrandsTailors />
+        <TailorsPricing />
         {/* <ClientProfile />  */}
-        <TailorsAppDownload />  
-        <Footer /> 
+        <TailorsAppDownload />
+        <Footer />
       </main>
     </SidebarProvider>
-  )
+  );
 }
