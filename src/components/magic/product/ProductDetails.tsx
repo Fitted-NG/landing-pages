@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import productImage1 from "/public/hands_in_pocket.png";
+import Like from "./Like";
 import bagIcon from "/public/icons/bag-2.svg";
-import heartIcon from "/public/icons/heart_icon.svg";
 import starIcon from "/public/icons/star.svg";
 import arrowDownIcon from "/public/icons/arrow-down.svg";
 import { ProductType } from "@/utils/magicProductsInfo";
@@ -45,7 +44,7 @@ export default function ProductDetails({
               </p>
             </div>
 
-            <Image src={heartIcon} alt="heart icon" />
+            <Like />
           </div>
 
           <div className="flex justify-between items-center">
