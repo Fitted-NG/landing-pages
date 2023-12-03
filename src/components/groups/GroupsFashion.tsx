@@ -110,7 +110,7 @@ export default function GroupFashion() {
                 </h3>
                 <p className="text-dark text-sm lg:text-base">
                   Engage in negotiations and finalize style details for the
-                  group. Make payment only when you're satisfied with the
+                  group. Make payment only when you&apos;re satisfied with the
                   offered price. Our platform provides a seamless and convenient
                   payment process
                 </p>

@@ -91,7 +91,7 @@ const Home: FC = () => {
 
   return (
     <>
-      <div className="relative hero-section py-[100px] md:py-[100px] lg:py-[180px]">
+      <section className="relative hero-section py-[100px] md:py-[100px] lg:py-[180px]">
         <Image
           src={"/blackmen__hero__banner.png"}
           alt={"fitted hero image"}
@@ -145,7 +145,7 @@ const Home: FC = () => {
         </div>
 
         <div className="overlay"></div>
-      </div>
+      </section>
 
       <section className="unpadded-section bg-white">
         <div className="container mx-auto px-3 md:px-6 max-w-7xl w-full rounded-2xl">
