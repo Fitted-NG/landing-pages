@@ -175,4 +175,23 @@ export const productsInfo: ProductType[] = [
     fabricName: "Crinkle fabric",
     fabricQuantity: "4 yards",
   },
+  {
+    code: "Purp-pl",
+    name: "Purple Puffy Dress",
+    description: "Exceptional elegant dress",
+    images: [
+      "/magic-tags/purple-puffy-dress/purple-puffy-dress-1.jpg",
+      "/magic-tags/purple-puffy-dress/purple-puffy-dress-2.jpg",
+      "/magic-tags/purple-puffy-dress/purple-puffy-dress-3.jpg",
+      "/magic-tags/purple-puffy-dress/purple-puffy-dress-4.jpg",
+    ],
+    sexOfClothing: "Womenswear",
+    price: 30000,
+    piecesSold: 278,
+    colors: "Purple",
+    brand: "Fitted Sator",
+    sizes: ["12"],
+    fabricName: "Organza",
+    fabricQuantity: "3 yards",
+  },
 ];
