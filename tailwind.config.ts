@@ -41,11 +41,39 @@ const config: Config = {
           "60%": { opacity: "0.8", scale: "1.0" },
           "70%": { opacity: "0", scale: "1.0" },
         },
+        "fade-down": {
+          "0%": { opacity: "0", transform: "translateY(-100%)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-down2": {
+          "0%": { opacity: "0", transform: "translateY(-150%)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-down3": {
+          "0%": { opacity: "0", transform: "translateY(-10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-up": {
+          "0%": { opacity: "1", transform: "translateY(0)" },
+          "100%": { opacity: "0", transform: "translateY(-100%)" },
+        },
+        "show-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         carousel: "carousel 45s infinite linear",
         "brands-carousel": "brands-carousel 30s infinite linear",
         "fade-in": "fade-in 20s infinite linear",
+        "fade-down": "fade-down 0.8s ease-in forwards",
+        "fade-down2": "fade-down2 0.8s ease-in 0.8s forwards",
+        "fade-down3": "fade-down3 0.8s ease-in 1.6s forwards",
+        "fade-up": "fade-up 0.8s ease-out 4s forwards",
+        "show-in": "show-in 0.5s linear 4.8s forwards",
+      },
+      backgroundImage: {
+        "splash-screen": "url('/magic-tag_splash-screen.png')",
       },
     },
   },
