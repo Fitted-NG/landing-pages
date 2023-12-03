@@ -69,7 +69,7 @@ const config: Config = {
         "fade-down": "fade-down 0.8s ease-in forwards",
         "fade-down2": "fade-down2 0.8s ease-in 0.8s forwards",
         "fade-down3": "fade-down3 0.8s ease-in 1.6s forwards",
-        "fade-up": "fade-up 0.8s ease-out 4s forwards",
+        "fade-up": "fade-up 1s ease-out 4s forwards",
         "show-in": "show-in 0.5s linear 4.8s forwards",
       },
       backgroundImage: {
