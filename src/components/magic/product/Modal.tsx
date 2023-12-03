@@ -1,7 +1,6 @@
 "use client";
 import { ProductType } from "@/utils/magicProductsInfo";
 import { useState } from "react";
-import "./modal.css";
 
 export default function Modal({
   product,
@@ -128,7 +127,7 @@ export default function Modal({
               Phone Number
             </label>
             <input
-              type="number"
+              type="tel"
               name="phoneNumber"
               required
               autoComplete="true"
