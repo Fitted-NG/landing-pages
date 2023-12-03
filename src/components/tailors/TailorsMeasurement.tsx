@@ -40,9 +40,11 @@ export default function TailorsMeasurement() {
               loading="lazy"
               className="object-contain cursor-pointer flex items-center"
             />
-            <h3 className="mt-3 text-[#101828] font-normal font-kotori-rose">Access measurements anywhere, anytime</h3>
+            <h3 className="mt-3 text-[#101828] font-normal font-kotori-rose">
+              Access measurements anywhere, anytime
+            </h3>
             <p className="mt-3 text-[#667085] font-avenir text-sm">
-              Fitted's technology empowers your business with offline
+              Fitted&apos;s technology empowers your business with offline
               capabilities, ensuring that connectivity challenges do not hinder
               your use of apps for improvement. Experience the full power of
               Fitted even in environments with limited or no internet access.
