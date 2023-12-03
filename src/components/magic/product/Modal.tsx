@@ -1,6 +1,7 @@
 "use client";
 import { ProductType } from "@/utils/magicProductsInfo";
 import { useState } from "react";
+import "./modal.css";
 
 export default function Modal({
   product,
@@ -84,6 +85,7 @@ export default function Modal({
                 type="text"
                 value={inputValues.firstName}
                 required
+                autoComplete="true"
                 onChange={handleChange}
                 name="firstName"
                 className="block w-full rounded border-0 bg-gray-200 px-4 py-1 md:py-2 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
@@ -98,6 +100,7 @@ export default function Modal({
                 type="text"
                 name="lastName"
                 required
+                autoComplete="true"
                 value={inputValues.lastName}
                 onChange={handleChange}
                 className="block w-full rounded border-0 bg-gray-200 px-4 py-1 md:py-2 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
@@ -113,6 +116,7 @@ export default function Modal({
               type="email"
               name="email"
               required
+              autoComplete="true"
               value={inputValues.email}
               onChange={handleChange}
               className="block w-full rounded border-0 bg-gray-200 px-4 py-1 md:py-2 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
@@ -127,6 +131,7 @@ export default function Modal({
               type="number"
               name="phoneNumber"
               required
+              autoComplete="true"
               value={inputValues.phoneNumber}
               onChange={handleChange}
               className="block w-full rounded border-0 bg-gray-200 px-4 py-1 md:py-2 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
@@ -172,6 +177,7 @@ export default function Modal({
               type="text"
               id="nameOfBrand"
               name="nameOfBrand"
+              autoComplete="true"
               value={inputValues.nameOfBrand}
               onChange={handleChange}
               className="block w-full rounded border-0 bg-gray-200 px-4 py-1 md:py-2 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
