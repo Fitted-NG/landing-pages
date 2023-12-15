@@ -9,8 +9,7 @@ export default function MainSection() {
         <div className="flex gap-2">
           <Image src={mouseCircle} alt="mouse circle icon" />
           <p className="text-[#5773FF] text-xs">
-            You&apos;re about to make your outfit instantly discoverable
-            anywhere on earth
+            You&apos;re about to view your outfit instantly
           </p>
         </div>
       </div>
