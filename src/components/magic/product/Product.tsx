@@ -4,13 +4,12 @@ import Image from "next/image";
 import ProductDetails from "./ProductDetails";
 import Accordions from "./Accordions";
 import fabricImage from "/public/fabric.png";
-import okeLagosBrand from "/public/Oke-Lagos.png";
 import fittedDarkLogo from "/public/logo-dark.png";
-import { ProductType } from "@/utils/magicProductsInfo";
+import { ProductTypeTwo } from "@/utils/magicProductsInfo";
 import Modal from "./Modal";
 import SuccessModal from "./SuccessModal";
 
-export default function Product({ product }: { product: ProductType }) {
+export default function Product({ product }: { product: ProductTypeTwo }) {
   const [showModal, setShowModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
@@ -28,8 +27,8 @@ export default function Product({ product }: { product: ProductType }) {
             </div>
 
             <p className="text-[#667085] text-xs max-w-[273px]">
-              This material is a {product.fabricName} from the finest fabric
-              producers, crafted into this magical style
+              This material is a grainy from the finest fabric producers,
+              crafted into this magical style
             </p>
           </div>
         </section>
@@ -37,21 +36,19 @@ export default function Product({ product }: { product: ProductType }) {
         <section className="bg-white">
           <div className="p-4 flex items-center gap-3">
             <div className="w-[74px] h-[74px] border border-[#D0D5DD] rounded-lg flex justify-center items-center">
-              {product.brand.toLocaleLowerCase().includes("fitted") ? (
-                <Image src={fittedDarkLogo} alt="Fittd logo" />
-              ) : (
-                <Image src={okeLagosBrand} alt="Oke Lagos" />
-              )}
+              <Image src={fittedDarkLogo} alt="Fitted logo" />
             </div>
 
-            <div>
-              <h4 className="text-[#1D2939] text-sm font-medium mb-2">
-                Designed by
-              </h4>
-              <p className="text-[#667085] text-xs capitalize">
-                {product.brand}
-              </p>
-            </div>
+            {product.user?.name && (
+              <div>
+                <h4 className="text-[#1D2939] text-sm font-medium mb-2">
+                  Designed by
+                </h4>
+                <p className="text-[#667085] text-xs capitalize">
+                  {product.user.name}
+                </p>
+              </div>
+            )}
           </div>
         </section>
       </main>

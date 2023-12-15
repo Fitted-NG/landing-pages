@@ -4,23 +4,23 @@ import Like from "./Like";
 import bagIcon from "/public/icons/bag-2.svg";
 import starIcon from "/public/icons/star.svg";
 import arrowDownIcon from "/public/icons/arrow-down.svg";
-import { ProductType } from "@/utils/magicProductsInfo";
+import { ProductTypeTwo } from "@/utils/magicProductsInfo";
 
 export default function ProductDetails({
   setShowModal,
   product,
 }: {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  product: ProductType;
+  product: ProductTypeTwo;
 }) {
   return (
     <section className="bg-white">
       <div className="w-full h-[400px] flex gap-4 overflow-x-scroll no-scrollbar">
-        {product.images.length > 0 ? (
-          product.images.map((img, index) => (
-            <div key={index} className="min-w-[350px] h-full relative">
+        {product.image_url_0 ? (
+          <>
+            <div className="min-w-[350px] h-full relative">
               <Image
-                src={img}
+                src={product.image_url_0}
                 alt={product.name}
                 fill={true}
                 priority
@@ -32,7 +32,16 @@ export default function ProductDetails({
                 <span className="text-[#1D2939] text-sm">Shop Look</span>
               </div>
             </div>
-          ))
+            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+              <p className="text-white text-center">Image yet to be uploaded</p>
+            </div>
+            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+              <p className="text-white text-center">Image yet to be uploaded</p>
+            </div>
+            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+              <p className="text-white text-center">Image yet to be uploaded</p>
+            </div>
+          </>
         ) : (
           <>
             <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
@@ -66,12 +75,9 @@ export default function ProductDetails({
 
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-1">
-              <p className="text-[#101828] text-lg">
-                ₦{product.price.toLocaleString("en-US")}
-              </p>
+              <p className="text-[#101828] text-lg">₦{product.price}</p>
               <p className="text-[#98A2B3] text-[10px] font-[350]">
-                {product.piecesSold} {product.piecesSold > 1 ? "pcs" : "pc"}{" "}
-                sold
+                500 pcs sold
               </p>
             </div>
 
@@ -86,7 +92,15 @@ export default function ProductDetails({
 
         <div>
           <h3 className="text-[#1D2939] text-sm mb-1">
-            Colour: {product.colors}
+            Colour:{" "}
+            <span className="inline-flex gap-1">
+              {product.color &&
+                product.color.map((item, index) => (
+                  <span key={index}>
+                    <span>{item}</span>
+                  </span>
+                ))}
+            </span>
           </h3>
           <div className="flex gap-[14px]">
             <div className="w-12 h-12 rounded-sm bg-[#4B7B89]"></div>
@@ -112,12 +126,12 @@ export default function ProductDetails({
           </div>
 
           <div className="flex items-center gap-[14px] overflow-x-scroll no-scrollbar">
-            {product.sizes.map((size, index) => (
+            {product.size.map((item, index) => (
               <p
                 key={index}
                 className="py-1 px-4 rounded-[40px] border border-[#E4E7EC] text-sm min-w-fit"
               >
-                {size}
+                {item}
               </p>
             ))}
           </div>

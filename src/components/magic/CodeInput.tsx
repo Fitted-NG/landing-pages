@@ -24,7 +24,7 @@ export default function CodeInput() {
         <div className="flex gap-[14px]">
           <input
             type="text"
-            className="bg-[#F9FAFB] border border-[#E5E9EE] max-w-[270px] h-[44px] rounded-lg focus:border-[#E5E9EE] outline-[#E5E9EE] text-[22px] font-extrabold text-[#1D2939] uppercase text-center"
+            className="bg-[#F9FAFB] border border-[#E5E9EE] w-full max-w-[270px] h-[44px] rounded-lg focus:border-[#E5E9EE] outline-[#E5E9EE] text-[22px] font-extrabold text-[#1D2939] uppercase text-center"
             name="input"
             value={inputValue}
             onChange={handleInput}
