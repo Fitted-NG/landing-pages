@@ -32,28 +32,28 @@ export default function ProductDetails({
                 <span className="text-[#1D2939] text-sm">Shop Look</span>
               </div>
             </div>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
           </>
         ) : (
           <>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
-            <div className="min-w-[320px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
           </>
