@@ -3,8 +3,16 @@ export const getAllProducts = async (id: string) => {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_API_BASE_URL}product/tagged-product/${id}`
     );
-    return res.json();
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error("Error fetching product");
+    }
   } catch (error) {
-    return error;
+    if (error instanceof Error) {
+      return {
+        error: error.message,
+      };
+    }
   }
 };
