@@ -120,9 +120,12 @@ export default function ProductDetails({
               </p>
             </div>
 
-            <p className=" text-[#1D2939] text-xs font-medium leading-[1] border-b border-[#1D2939]">
+            <Link
+              href={product.chart_link}
+              className=" text-[#1D2939] text-xs font-medium leading-[1] border-b border-[#1D2939]"
+            >
               Check size guide
-            </p>
+            </Link>
           </div>
 
           <div className="flex items-center gap-[14px] overflow-x-scroll no-scrollbar">
