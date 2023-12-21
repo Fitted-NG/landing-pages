@@ -24,6 +24,7 @@ export type ProductTypeTwo = {
   price: string;
   currency: string;
   tag: string;
+  chart_link: string;
   size: string[];
   color: string[];
   created_at: string;
@@ -33,7 +34,8 @@ export type ProductTypeTwo = {
     email: string;
     name?: string;
     phone_number?: string;
-    brand_name?: string;
+    brand_name: string;
+    brand_logo: string | null;
     created_at: string;
     updated_at: string;
   };

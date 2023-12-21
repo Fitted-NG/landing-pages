@@ -18,7 +18,7 @@ export default function Product({ product }: { product: ProductTypeTwo }) {
       <main className="bg-[#F9FAFB] max-w-[768px] mb-20 mx-auto min-h-[calc(100vh-60px)]">
         <ProductDetails setShowModal={setShowModal} product={product} />
 
-        <Accordions />
+        <Accordions details={product.description} sizes={product.size} />
 
         <section className="bg-white mb-4">
           <div className="py-6 px-4">
@@ -35,17 +35,26 @@ export default function Product({ product }: { product: ProductTypeTwo }) {
 
         <section className="bg-white">
           <div className="p-4 flex items-center gap-3">
-            <div className="w-[74px] h-[74px] border border-[#D0D5DD] rounded-lg flex justify-center items-center">
-              <Image src={fittedDarkLogo} alt="Fitted logo" />
-            </div>
+            {product.user?.brand_logo ? (
+              <div className="w-[74px] h-[74px] border border-[#D0D5DD] rounded-lg flex justify-center items-center">
+                <Image
+                  src={product.user.brand_logo}
+                  alt={product.user.brand_name}
+                />
+              </div>
+            ) : (
+              <div className="w-[74px] h-[74px] border border-[#D0D5DD] rounded-lg flex justify-center items-center">
+                <Image src={fittedDarkLogo} alt="Fitted logo" />
+              </div>
+            )}
 
-            {product.user?.name && (
+            {product.user.brand_name && (
               <div>
                 <h4 className="text-[#1D2939] text-sm font-medium mb-2">
                   Designed by
                 </h4>
                 <p className="text-[#667085] text-xs capitalize">
-                  {product.user.name}
+                  {product.user.brand_name}
                 </p>
               </div>
             )}
