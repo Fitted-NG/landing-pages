@@ -20,26 +20,15 @@ export default function Product({ product }: { product: ProductTypeTwo }) {
 
         <Accordions details={product.description} sizes={product.size} />
 
-        <section className="bg-white mb-4">
-          <div className="py-6 px-4">
-            <div>
-              <Image src={fabricImage} alt="fabric" className="mx-auto mb-3" />
-            </div>
-
-            <p className="text-[#667085] text-xs max-w-[273px]">
-              This material is a grainy from the finest fabric producers,
-              crafted into this magical style
-            </p>
-          </div>
-        </section>
-
         <section className="bg-white">
           <div className="p-4 flex items-center gap-3">
             {product.user?.brand_logo ? (
-              <div className="w-[74px] h-[74px] border border-[#D0D5DD] rounded-lg flex justify-center items-center">
+              <div className="w-[74px] h-[74px] border border-[#D0D5DD] rounded-lg flex justify-center items-center relative">
                 <Image
                   src={product.user.brand_logo}
                   alt={product.user.brand_name}
+                  fill={true}
+                  className="absolute object-cover object-center"
                 />
               </div>
             ) : (
