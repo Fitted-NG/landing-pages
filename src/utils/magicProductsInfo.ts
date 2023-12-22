@@ -13,6 +13,34 @@ export type ProductType = {
   fabricQuantity: string;
 };
 
+export type ProductTypeTwo = {
+  uuid: string;
+  name: string;
+  description: string;
+  image_url_0: string;
+  image_url_1?: string;
+  image_url_2?: string;
+  image_url_3?: string;
+  price: string;
+  currency: string;
+  tag: string;
+  chart_link: string;
+  size: string[];
+  color: string[];
+  created_at: string;
+  updated_at: string;
+  user: {
+    uuid: string;
+    email: string;
+    name?: string;
+    phone_number?: string;
+    brand_name: string;
+    brand_logo: string | null;
+    created_at: string;
+    updated_at: string;
+  };
+};
+
 export const productsInfo: ProductType[] = [
   {
     code: "a1b2c3",

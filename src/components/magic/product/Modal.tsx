@@ -1,13 +1,13 @@
 "use client";
-import { ProductType } from "@/utils/magicProductsInfo";
 import { useState } from "react";
+import { ProductTypeTwo } from "@/utils/magicProductsInfo";
 
 export default function Modal({
   product,
   setShowModal,
   setShowSuccessModal,
 }: {
-  product: ProductType;
+  product: ProductTypeTwo;
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
   setShowSuccessModal: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
@@ -34,7 +34,8 @@ export default function Modal({
     e.preventDefault();
     setIsSubmitting(true);
 
-    const { images, ...rest } = product;
+    const { image_url_0, image_url_1, image_url_2, image_url_3, ...rest } =
+      product;
 
     const data = {
       ...inputValues,
