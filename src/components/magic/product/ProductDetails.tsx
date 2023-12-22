@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Like from "./Like";
 import bagIcon from "/public/icons/bag-2.svg";
-import starIcon from "/public/icons/star.svg";
 import arrowDownIcon from "/public/icons/arrow-down.svg";
 import { ProductTypeTwo } from "@/utils/magicProductsInfo";
 
@@ -15,10 +14,10 @@ export default function ProductDetails({
 }) {
   return (
     <section className="bg-white">
-      <div className="w-full h-[400px] flex gap-4 overflow-x-scroll no-scrollbar">
+      <div className="w-full h-[400px] flex gap-4">
         {product.image_url_0 ? (
           <>
-            <div className="min-w-[350px] h-full relative">
+            <div className="w-full h-full relative">
               <Image
                 src={product.image_url_0}
                 alt={product.name}
@@ -32,7 +31,7 @@ export default function ProductDetails({
                 <span className="text-[#1D2939] text-sm">Shop Look</span>
               </div>
             </div>
-            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            {/* <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
             <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
@@ -40,11 +39,14 @@ export default function ProductDetails({
             </div>
             <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
-            </div>
+            </div> */}
           </>
         ) : (
           <>
-            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
+            <div className="w-full h-full bg-pink-fitted/50 flex justify-center items-center">
+              <p className="text-white text-center">Image yet to be uploaded</p>
+            </div>
+            {/* <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
             </div>
             <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
@@ -52,10 +54,7 @@ export default function ProductDetails({
             </div>
             <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
               <p className="text-white text-center">Image yet to be uploaded</p>
-            </div>
-            <div className="min-w-[350px] h-full relative bg-pink-fitted/50 flex justify-center items-center">
-              <p className="text-white text-center">Image yet to be uploaded</p>
-            </div>
+            </div> */}
           </>
         )}
       </div>
@@ -76,16 +75,6 @@ export default function ProductDetails({
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-1">
               <p className="text-[#101828] text-lg">₦{product.price}</p>
-              <p className="text-[#98A2B3] text-[10px] font-[350]">
-                500 pcs sold
-              </p>
-            </div>
-
-            <div className="flex items-center gap-0.5">
-              <Image src={starIcon} alt="star icon" />
-              <p className="text-[#101828] text-xs font-[350]">
-                4.5 <span className="text-[#344054]">(266)</span>
-              </p>
             </div>
           </div>
         </div>
