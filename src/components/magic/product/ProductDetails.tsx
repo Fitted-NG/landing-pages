@@ -121,7 +121,7 @@ export default function ProductDetails({
             </div>
 
             <Link
-              href={product.chart_link}
+              href={product.chart_link || ""}
               className=" text-[#1D2939] text-xs font-medium leading-[1] border-b border-[#1D2939]"
             >
               Check size guide
