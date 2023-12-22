@@ -109,12 +109,13 @@ export default function ProductDetails({
               </p>
             </div>
 
-            <Link
+            <a
               href={product.chart_link || ""}
+              target="_blank"
               className=" text-[#1D2939] text-xs font-medium leading-[1] border-b border-[#1D2939]"
             >
               Check size guide
-            </Link>
+            </a>
           </div>
 
           <div className="flex items-center gap-[14px] overflow-x-scroll no-scrollbar">
