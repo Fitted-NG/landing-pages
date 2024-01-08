@@ -76,7 +76,10 @@ export default function ProductDetails({
 
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-1">
-              <p className="text-[#101828] text-lg">₦{product.price}</p>
+              <p className="text-[#101828] text-lg">
+                {product.currency === "NGN" ? "₦" : "$"}
+                {product.price}
+              </p>
             </div>
           </div>
         </div>
