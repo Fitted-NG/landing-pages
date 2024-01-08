@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Like from "./Like";
 import bagIcon from "/public/icons/bag-2.svg";
 import arrowDownIcon from "/public/icons/arrow-down.svg";
@@ -12,6 +13,7 @@ export default function ProductDetails({
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
   product: ProductTypeTwo;
 }) {
+  const router = useRouter();
   return (
     <section className="bg-white">
       <div className="w-full h-[400px] flex gap-4">
@@ -109,13 +111,12 @@ export default function ProductDetails({
               </p>
             </div>
 
-            <a
-              href={product.chart_link || ""}
-              target="_blank"
+            <p
+              onClick={() => router.push(product.chart_link || "")}
               className=" text-[#1D2939] text-xs font-medium leading-[1] border-b border-[#1D2939]"
             >
               Check size guide
-            </a>
+            </p>
           </div>
 
           <div className="flex items-center gap-[14px] overflow-x-scroll no-scrollbar">
